@@ -1,0 +1,42 @@
+<div class="nav-header">
+    <nav class="nav-wrapper" aria-label="Main Navigation">
+        {% if site.logo %}
+            <span class="logo">
+                <a href="{{ site.url }}" title="Home">
+                    <img src="{{ site.logo }}" alt="Logo" />
+                </a>
+            </span>
+        {% endif %}
+
+        <!-- Navigation Links -->
+        {% if navigation %}
+            <ul>
+                {% for item in navigation %}
+                    <li class="nav-{{ item.slug }}{% if item.current %} active{% endif %}">
+                        <a href="{{ item.url }}" {% if item.absolute %}class="absolute"{% endif %}>
+                            <span>{{ item.label }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- Search Icon -->
+        <a class="nav-search" title="Search" aria-label="Search" data-ghost-search>
+            <i class="icon icon-search" aria-hidden="true"></i>
+        </a>
+    </nav>
+
+    <div class="nav-wrapper-control">
+        <div class="inner">
+            <a class="nav-menu" role="button">
+                <i class="icon icon-menu" aria-hidden="true"></i> Menu
+            </a>
+            <a class="nav-search" title="Search" aria-label="Search" role="button" data-ghost-search>
+                <i class="icon icon-search" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="nav-close" role="button" aria-label="Close"></div>

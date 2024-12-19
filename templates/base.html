@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style1.css" />
+
+	<script>
+        var localTheme = localStorage.getItem('attila_theme');
+        switch (localTheme) {
+            case 'dark':
+                document.documentElement.classList.add('theme-dark');
+                break;
+            case 'light':
+                document.documentElement.classList.add('theme-light');
+                break;
+            default:
+                break;
+        }
+	</script>
+
+    {% if custom.color_scheme == "Dark" %}
+        <script>localStorage.setItem('attila_theme', 'dark');</script>
+    {% elif custom.color_scheme == "Light" %}
+        <script>localStorage.setItem('attila_theme', 'light');</script>
+    {% elif custom.color_scheme == "System" %}
+        <script>localStorage.setItem('attila_theme', 'system');</script>
+    {% endif %}
+
+    {% if custom.color_scheme != "Light" and custom.darkmode_accent_color %}
+        <style>
+            .theme-dark:root {
+                --ghost-accent-color: {{ custom.darkmode_accent_color }};
+            }
+            @media (prefers-color-scheme: dark) {
+                html:not(.theme-light):root {
+                    --ghost-accent-color: {{ custom.darkmode_accent_color }};
+                }
+            }
+        </style>
+    {% endif %}
+
+</head>
+
+<body class="{{body_class}}">
+
+	<div class="viewport">
+		{% include 'header.html' %}
+
+		<section class="page-wrapper">
+
+            {% block content %}{% endblock %}
+
+            {% include 'footer.html'%}
+
+		</section>
+	</div>
+
+	<script type="text/javascript" src="../static/js/script.js"></script>
+
+</body>
+</html>

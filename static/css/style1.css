@@ -1,0 +1,17 @@
+.icon-text {
+    display: flex; /* Enables Flexbox for alignment */
+    align-items: center; /* Vertically aligns items in the center */
+    gap: 8px; /* Optional: Adds spacing between the icon and the text */
+}
+
+.contact-item {
+    display: flex; /* Align icon and text within each item */
+    align-items: center; /* Vertically align icon and text */
+    gap: 8px; /* Space between the icon and the text */
+    text-align: center;
+    flex: 1;
+}
+
+.contact-item span {
+    white-space: nowrap; /* Prevent text wrapping */
+}
