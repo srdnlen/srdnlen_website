@@ -15,3 +15,21 @@
 .contact-item span {
     white-space: nowrap; /* Prevent text wrapping */
 }
+
+.post-box1{
+    padding-top:91.2px;
+    padding-bottom:91.2px;
+    border-bottom:1px solid var(--color-background-contrast)
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not(.theme-light):root {
+      --color-background-main: #222426;
+      --color-background-secondary: #1D1F20;
+      --color-background-contrast: #3B3D40;
+      --color-background-overlay: rgba(9,10,13,0.9);
+      --color-content-lead: #FFF;
+      --color-content-main: #E1E3E6;
+      --color-content-secondary: #909499;
+    }
+}

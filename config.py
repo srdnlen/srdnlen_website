@@ -1,7 +1,7 @@
 navigation = [
-        {"slug": "home", "label": "Home", "url": "/", "current": True, "absolute": True},
-        {"slug": "about", "label": "About", "url": "/about", "current": False, "absolute": True},
-    ]
+    {"slug": "home", "label": "Home", "url": "/", "current": False, "absolute": True},
+    {"slug": "about", "label": "About", "url": "/about", "current": False, "absolute": True},
+]
 
 custom_settings = {
         "color_scheme": "Dark",  # Options: "Dark", "Light", "System"
