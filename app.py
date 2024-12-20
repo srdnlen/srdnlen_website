@@ -49,6 +49,7 @@ def about():
         {"slug": "about", "label": "About", "url": "/about", "current": False, "absolute": True},
     ]
     navigation = change_active_nav(navigation, 1)
+
     return render_template("about.html", custom=custom_settings, site=site, navigation=navigation, current_year=2024)
 
 if __name__ == "__main__":
