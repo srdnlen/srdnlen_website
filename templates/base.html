@@ -26,22 +26,22 @@
         }
 	</script>
 
-    {% if custom.color_scheme == "Dark" %}
+    {% if site.color_scheme == "Dark" %}
         <script>localStorage.setItem('attila_theme', 'dark');</script>
-    {% elif custom.color_scheme == "Light" %}
+    {% elif site.color_scheme == "Light" %}
         <script>localStorage.setItem('attila_theme', 'light');</script>
-    {% elif custom.color_scheme == "System" %}
+    {% elif site.color_scheme == "System" %}
         <script>localStorage.setItem('attila_theme', 'system');</script>
     {% endif %}
 
-    {% if custom.color_scheme != "Light" and custom.darkmode_accent_color %}
+    {% if site.color_scheme != "Light" and site.darkmode_accent_color %}
         <style>
             .theme-dark:root {
-                --ghost-accent-color: {{ custom.darkmode_accent_color }};
+                --ghost-accent-color: {{ site.darkmode_accent_color }};
             }
             @media (prefers-color-scheme: dark) {
                 html:not(.theme-light):root {
-                    --ghost-accent-color: {{ custom.darkmode_accent_color }};
+                    --ghost-accent-color: {{ site.darkmode_accent_color }};
                 }
             }
         </style>
