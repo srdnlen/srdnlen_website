@@ -13,8 +13,10 @@
         </div>
     </header>
     <main class="content" role="main">
+        {% if meta.pagination.prev %}
+            {% include 'pagination.html' %}
+        {% endif %}
         {% for post in posts%}
-
         <article class="{{post.class}}">
             <div class="inner">
                 <div class="box post-box post-box1">
@@ -27,13 +29,13 @@
                         {% if post.primary_tag %}
                             in <a class="post-meta-tag" href="{{ post.primary_tag.url }}">{{ post.primary_tag.name }}</a>
                         {% endif %}
-                        on <time datetime="{{ post.date.strftime('%d-%m-%Y') }}">{{ post.date.strftime('%d %b %Y') }}</time>
+                        on <time datetime="{{ post.published_at.strftime('%d-%m-%Y') }}">{{ post.published_at.strftime('%d %b %Y') }}</time>
                     </span>
                     <p class="post-excerpt">{{ post.excerpt }}&hellip;</p>
                 </div>
             </div>
         </article>
-
         {% endfor %}
+        {% include 'pagination.html' %}
     </main>
 {% endblock %}

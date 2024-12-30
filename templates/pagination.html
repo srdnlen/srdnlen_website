@@ -1,0 +1,23 @@
+<nav class="pagination" aria-label="Pagination">
+    <div class="inner">
+        <div class="box pagination-box">
+            {% if meta.pagination.prev %}
+            <a title="Newer Posts" class="pagination-next" href="{{page_url_prev}}">
+                <i class="fa fa-mail" aria-hidden="true">
+                    <img src="../static/icons/icon-arrow-left.svg" alt="icon-left">                    
+                </i>
+                <span class="pagination-label">Newer Posts</span>
+            </a>
+            {% endif %}
+            <span class="pagination-info">Page {{meta.pagination.page}} of {{meta.pagination.pages}}</span>
+            {% if meta.pagination.next %} 
+            <a title="Older Posts" class="pagination-prev" href="{{page_url_next}}">
+                <i class="fa fa-mail" aria-hidden="true">
+                    <img src="../static/icons/icon-arrow-right.svg" alt="icon-right">                    
+                </i>
+                <span class="pagination-label">Older Posts</span> 
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
