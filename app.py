@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect
 from datetime import datetime
 import json
 import configparser 
-from ghost_apis import get_posts
+from ghost_apis import get_posts, get_posts_by_id
 
 def change_active_nav(nav:list, idx:int) -> list:
     for i, item in enumerate(nav):
@@ -11,7 +11,7 @@ def change_active_nav(nav:list, idx:int) -> list:
     nav[idx]['current'] = True
     return nav
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 config = configparser.ConfigParser()
 config.read('config.ini')
 ghost_api = config['Ghost']['admin_url']
@@ -55,6 +55,17 @@ def pages(num):
     return render_template("index.html", navigation=navigation, site=site, current_year=2024, posts=posts, meta=meta, 
                            page_url_next=f'/pages/{meta['pagination']['next']}',
                            page_url_prev=f'/pages/{meta['pagination']['prev']}')
+
+@app.route("/posts/<id>")
+def post(id):
+    navigation = [
+        {"slug": "home", "label": "Home", "url": "/", "current": False, "absolute": True},
+        {"slug": "about", "label": "About", "url": "/about", "current": False, "absolute": True},
+    ]
+
+    post = get_posts_by_id(ghost_api, api_key, id)
+    
+    return render_template("post.html", navigation=navigation, site=site, current_year=2024, post=post)
 
 @app.route("/about")
 def about():
