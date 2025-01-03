@@ -33,3 +33,17 @@
       --color-content-secondary: #909499;
     }
 }
+
+.container {
+    display: flex;
+    gap: 20px; /* Space between columns */
+}
+
+.column.associates ul{
+    list-style-type:circle
+}
+.column {
+    flex: 1; /* Make both columns equal width */
+    padding: 20px;
+    border-radius: 5px;
+}
