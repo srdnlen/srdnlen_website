@@ -27,13 +27,10 @@ limit = int(config['post']['limit'])
 @app.route("/")
 def home():
 
-    posts, meta = get_posts(ghost_api, api_key, limit)
-    navigation = [
-        {"slug": "home", "label": "Home", "url": "/", "current": False, "absolute": True},
-        {"slug": "about", "label": "About", "url": "/about", "current": False, "absolute": True},
-    ]
+    navigation = json.loads(config['site']['navigation'])
     navigation = change_active_nav(navigation, 0)
 
+    posts, meta = get_posts(ghost_api, api_key, limit)
     return render_template("index.html", navigation=navigation, site=site, current_year=2024, posts=posts, meta=meta, 
                            page_url_next=f'/pages/{meta['pagination']['next']}', 
                            page_url_prev=f'/pages/{meta['pagination']['prev']}')
@@ -41,13 +38,10 @@ def home():
 @app.route("/pages/<int:num>")
 def pages(num):
 
-    posts, meta = get_posts(ghost_api, api_key, limit, page=num)
-    navigation = [
-        {"slug": "home", "label": "Home", "url": "/", "current": False, "absolute": True},
-        {"slug": "about", "label": "About", "url": "/about", "current": False, "absolute": True},
-    ]
+    navigation = json.loads(config['site']['navigation'])
     navigation = change_active_nav(navigation, 0)
 
+    posts, meta = get_posts(ghost_api, api_key, limit, page=num)
     if meta['pagination']['prev'] == 1:
         return render_template("index.html", navigation=navigation, site=site, current_year=2024, posts=posts, meta=meta, 
                            page_url_next=f'/pages/{meta['pagination']['next']}',
@@ -58,23 +52,16 @@ def pages(num):
 
 @app.route("/posts/<id>")
 def post(id):
-    navigation = [
-        {"slug": "home", "label": "Home", "url": "/", "current": False, "absolute": True},
-        {"slug": "about", "label": "About", "url": "/about", "current": False, "absolute": True},
-    ]
 
+    navigation = json.loads(config['site']['navigation'])
     post = get_posts_by_id(ghost_api, api_key, id)
-    
     return render_template("post.html", navigation=navigation, site=site, current_year=2024, post=post)
 
 @app.route("/about")
 def about():
-    navigation = [
-        {"slug": "home", "label": "Home", "url": "/", "current": False, "absolute": True},
-        {"slug": "about", "label": "About", "url": "/about", "current": False, "absolute": True},
-    ]
-    navigation = change_active_nav(navigation, 1)
 
+    navigation = json.loads(config['site']['navigation'])
+    navigation = change_active_nav(navigation, 1)   
     return render_template("about.html", site=site, navigation=navigation, current_year=2024)
 
 if __name__ == "__main__":
