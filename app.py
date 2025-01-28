@@ -55,6 +55,7 @@ def post(id):
 
     navigation = json.loads(config['site']['navigation'])
     post = get_posts_by_id(ghost_api, api_key, id)
+    print(post)
     return render_template("post.html", navigation=navigation, site=site, current_year=2024, post=post)
 
 @app.route("/about")
@@ -62,7 +63,10 @@ def about():
 
     navigation = json.loads(config['site']['navigation'])
     navigation = change_active_nav(navigation, 1)   
-    return render_template("about.html", site=site, navigation=navigation, current_year=2024)
+    with open('members.json', 'r') as fp:
+        members = json.load(fp)
+
+    return render_template("about.html", site=site, navigation=navigation, current_year=2024, members=members)
 
 if __name__ == "__main__":
     app.run(debug=True)

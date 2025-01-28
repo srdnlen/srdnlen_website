@@ -1,5 +1,6 @@
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
+import urllib
 
 def _modify_post_data(posts: list) -> list:
 
@@ -46,11 +47,31 @@ def get_posts_by_id(ghost_api: str, key: str, id: str) -> list:
     """
 
     post_urls = ghost_api + '/posts/' + id
-    params = {'key': key}
+    params = params = {'key': key, 'include':'tags', 'limit':1}
 
     data = requests.get(post_urls, params=params).json()
-    posts = _modify_post_data(data['posts'])
-    return posts[0]
+    current_posts = _modify_post_data(data['posts'])
+
+    """post_urls = ghost_api + '/posts/' + id
+    print(data['posts'][0])
+    #params = params = {'key': key, 'include':'tags', 'filter':f'published_at:>{data['posts'][0]['published_at']} slug:-' + f'{data['posts'][0]['slug']}'}
+    params = {'key': key, 'include':'tags', 'filter':f'slug:-weee-2 published_at:<2024-12-30', 'limit':1}
+    payload_str = urllib.parse.urlencode(params, safe="<:")
+    data = requests.get(ghost_api + '/posts/', params=payload_str)#&include=tags&filter=id:=11")#, params=params)# .json()
+
+    print(data.request.url)"""
+
+    # next_post = _modify_post_data(data['posts'])
+    # print(next_post)
+
+    # post_urls = ghost_api + '/posts/' + id
+    # params = params = {'key': key, 'include':'tags', 'filter':f'published_at:<{data['posts'][0]['published_at']}'}
+
+    # data = requests.get(post_urls, params=params).json()
+    # previous_post = _modify_post_data(data['posts'])
+
+
+    return current_posts[0]
 
 
 if __name__ == '__main__':

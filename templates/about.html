@@ -33,341 +33,31 @@
                     <div class="slideshow-container">
 
                         <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
-                            <h3>Category: Pwn</h3>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
+                        {% for cat in members %}
+                            <div class="mySlides fade">
+                                <h3>Category: {{cat}}</h3> 
+                                {% for i in range(0, members[cat] | length, 2) %}
+                                    <div class="container team-members"> 
+                                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                                            {% for j in range(i, i+2) %}
+                                            {% set p=members[cat][j] %}
+                                            <div class="col">
+                                                <div class="card">
+                                                    <center>
+                                                        <img src="{{p['avatar']}}" alt="{{p['Nick']}}" class="card-img-top">
+                                                    </center>
+                                                    <div class="card-body">
+                                                    <h4 class="card-title">{{p['Name']}} - <b>Nick: {{p['Nick']}} ({{p['role']}})</b></h4>
+                                                    <p class="card-text">{{p['position']}}</p>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            {% endfor %}
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><br>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </div><br>
+                                {% endfor %}
                             </div>
-                        </div>
-                      
-                        <div class="mySlides fade">
-                            <h3>Category: Rev</h3>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><br>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <h3>Category: Foren</h3>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><br>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <h3>Category: Web</h3>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><br>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <h3>Category: Crypto</h3>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><br>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <h3>Category: Ex members - Associates</h3>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><br>
-                            <div class="container team-members"> 
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <center>
-                                                <img src="https://srdnlen.it/assets/img/avatars/astralXploit0.png" alt="Placeholder Image" class="card-img-top">
-                                            </center>
-                                            <div class="card-body">
-                                            <h4 class="card-title">Prof. Davide Maiorca - <b>Founder and Captain</b></h4>
-                                            <p class="card-text">Nick: astralXploit0 <br> Associate Professor of Computer Engineering @ University of Cagliari, Italy</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                       
                         <!-- Next and previous buttons -->
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -377,12 +67,9 @@
                       
                       <!-- The dots/circles -->
                       <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
+                        {% for i in range(members.keys() | length )%}
+                            <span class="dot" onclick="currentSlide(i)"></span>
+                        {% endfor %}
                       </div>
                     <hr>
                     
