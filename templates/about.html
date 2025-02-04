@@ -31,31 +31,74 @@
                     </div>
                     <h2 id="team-members">Associates</h2>
                     <div class="slideshow-container">
-
                         <!-- Full-width images with number and caption text -->
                         {% for cat in members %}
                             <div class="mySlides fade">
-                                <h3>Category: {{cat}}</h3> 
-                                {% for i in range(0, members[cat] | length, 2) %}
+                                <h3>Category: {{cat}}</h3>
+                                {% if num[cat] % 2 == 0 %}
+                                    {% for i in range(0, members[cat] | length, 2) %}
+                                        <div class="container team-members"> 
+                                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                {% for j in range(i, i+2) %}
+                                                {% set p=members[cat][j] %}
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <center>
+                                                            <img src="../static/images/avatar/{{p['avatar']}}" alt="{{p['Nick']}}" class="card-img-top">
+                                                        </center>
+                                                        <div class="card-body">
+                                                        <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} ({{p['role']}})</b>{% endif %}</h4></a>
+                                                        <p class="card-text">{{p['position']}}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div><br>
+                                    {% endfor %}
+                                {% else %}
+                                    {% for i in range(0, members[cat] | length - 1, 2) %}
+                                        <div class="container team-members"> 
+                                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                {% for j in range(i, i+2) %}
+                                                    {% set p=members[cat][j] %}
+                                                    <div class="col">
+                                                        <div class="card">
+                                                            <center>
+                                                                <img src="../static/images/avatar/{{p['avatar']}}" alt="{{p['Nick']}}" class="card-img-top">
+                                                            </center>
+                                                            <div class="card-body">
+                                                            <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} ({{p['role']}})</b>{% endif %}</h4></a>
+                                                            <p class="card-text">{{p['position']}}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div><br>
+                                    {% endfor %}
                                     <div class="container team-members"> 
                                         <div class="row row-cols-1 row-cols-md-2 g-4">
-                                            {% for j in range(i, i+2) %}
-                                            {% set p=members[cat][j] %}
+                                            {% set p=members[cat][members[cat] | length - 1] %}
                                             <div class="col">
                                                 <div class="card">
                                                     <center>
-                                                        <img src="{{p['avatar']}}" alt="{{p['Nick']}}" class="card-img-top">
+                                                        <img src="../static/images/avatar/{{p['avatar']}}" alt="{{p['Nick']}}" class="card-img-top">
                                                     </center>
                                                     <div class="card-body">
-                                                    <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} - <b>Nick: {{p['Nick']}} ({{p['role']}})</b></h4></a>
+                                                    <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} ({{p['role']}})</b>{% endif %}</h4></a>
                                                     <p class="card-text">{{p['position']}}</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            {% endfor %}
+                                            <div class="col">
+                                                <div class="card">
+                                                    
+                                                </div>
+                                            </div>
                                         </div>
                                     </div><br>
-                                {% endfor %}
+                                {% endif %}
                             </div>
                         {% endfor %}
                       
@@ -67,8 +110,8 @@
                       
                       <!-- The dots/circles -->
                       <div style="text-align:center">
-                        {% for i in range(members.keys() | length )%}
-                            <span class="dot" onclick="currentSlide(i)"></span>
+                        {% for i in range(members.keys() | length)%}
+                            <span class="dot" onclick="currentSlide({{i+1}})"></span>
                         {% endfor %}
                       </div>
                     <hr>
