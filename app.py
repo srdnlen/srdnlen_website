@@ -65,8 +65,9 @@ def about():
     navigation = change_active_nav(navigation, 1)   
     with open('members.json', 'r') as fp:
         members = json.load(fp)
+    num = {cat: len(i) for cat, i in members.items()}
 
-    return render_template("about.html", site=site, navigation=navigation, current_year=2024, members=members)
+    return render_template("about.html", site=site, navigation=navigation, current_year=2024, members=members, num=num)
 
 if __name__ == "__main__":
     app.run(debug=True)

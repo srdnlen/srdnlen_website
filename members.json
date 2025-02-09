@@ -1,38 +1,208 @@
 {
     "Crypto":[
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy", "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"}
+        {
+            "Name":"Lorenzo Siriu",
+            "Nick": "Lollo", 
+            "role": "Captain Team Crypto", 
+            "position": "Master's student in Mathematics curriculum Cryptography @ UniTrento, Bachelor's degree in Computer Science @ UniCA, Team Italy 2024", 
+            "avatar": "siriu.png",
+            "link": "https://www.linkedin.com/in/lorenzo-siriu/"
+        },
+        {
+            "Name":"Giovanni Manca",
+            "Nick": "zaua", 
+            "role": "", 
+            "position": "Cyber Security engineer. Rev enjoyer. Good at guessing. ", 
+            "avatar": "default.jpg",
+            "link": "https://www.linkedin.com/in/lorenzo-siriu/"
+        },
+        {
+            "Name":"Davide Sechi",
+            "Nick": "guaddu", 
+            "role": "", 
+            "position": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
+            "avatar": "sechi.png",
+            "link": "https://www.linkedin.com/in/lorenzo-siriu/"
+        }
     ],
-    "Foren":[
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy", "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"}
+    "Foren/Misc":[
+        {
+            "Name":"Silvia Lucia Sanna",
+            "Nick": "slsanna", 
+            "role": "Captain Team Foren", 
+            "position": "National PhD Student in \"AI for Security and CyberSecurity\" focused on mobile threat detection and Digital Forensics consultant. Part of srdnlen since 2020 in forensics category. Top women player in openECSC 2022 and selected for women bootcamp by ENISA. Women4Cyber Youth Ambassador in 2023", 
+            "avatar": "silvialsanna.png",
+            "link": "https://www.linkedin.com/in/silvia-lucia-sanna-894353151/"
+        },
+        {
+            "Name":"Luca Vitaliano",
+            "Nick": "vita", 
+            "role": "", 
+            "position": "Technical diploma in Computer Science @ ITIS Michele Giua. Ongoing Bachelor degree in Computer Engineering @ UniCA.", 
+            "avatar": "damiano.jpg",
+            "link": "https://www.linkedin.com/in/luca-vitaliano-damiano-8a0274153/"
+        },
+        {
+            "Name":"Simone Cocco",
+            "Nick": "d1dpvl", 
+            "role": "", 
+            "position": "Technical diploma @ ITIS G. Marconi Cagliari. Ongoing Bachelor degree in Applied Science & Data Analytics @ UniCA. Currently learning hardware security", 
+            "avatar": "cocco.JPG",
+            "link": "https://www.linkedin.com/in/silvia-lucia-sanna-894353151/"
+        },
+        {
+            "Name":"Nicholas Meli",
+            "Nick": "unickz", 
+            "role": "", 
+            "position": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
+            "avatar": "meli.png",
+            "link": "https://unickz.dev"
+        },
+        {
+            "Name":"Nicola Deidda",
+            "Nick": "MrDeiv", 
+            "role": "", 
+            "position": "PhD Student in Cybersecurity @ UniCA, IMT Lucca", 
+            "avatar": "deidda.png",
+            "link": "https://www.linkedin.com/in/nicola-deidda-543a8b180/"
+        },
+        {
+            "Name":"Irene Pranteddu",
+            "Nick": "irina", 
+            "role": "", 
+            "position": "Technical diploma @ IIS. Asproni-Fermi Iglesias. Ongoing bachelor degree in Computer Engineering @ UniCA", 
+            "avatar": "pranteddu.jpg",
+            "link": ""
+        }
     ],
     "Web":[
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy", "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"}
+        {
+            "Name":"Lorenzo Pisu",
+            "Nick": "pysu", 
+            "role": "Captain Team Web", 
+            "position": "PhD Student in Computer Engineering @ UniCA", 
+            "avatar": "pisu.png",
+            "link": "https://www.linkedin.com/in/lorenzo-pisu-68a983226/"
+        },
+        {
+            "Name":"Alessandro Frau",
+            "Nick": "takenx10", 
+            "role": "", 
+            "position": "Software Developer and Cybersecurity Engineer @ Digital Defense", 
+            "avatar": "frau.png",
+            "link": "https://www.linkedin.com/in/alessandro-frau-takenx10/"
+        },
+        {
+            "Name":"Federico Loi",
+            "Nick": "octaviusss", 
+            "role": "", 
+            "position": "Security Engineer @ IMQ Minded Security, Milan. Master's Degree in Cybersecurity @ UniCA", 
+            "avatar": "loi.png",
+            "link": "https://www.linkedin.com/in/federico-loi/"
+        },
+        {
+            "Name":"Bruno Pala",
+            "Nick": "gheddus", 
+            "role": "", 
+            "position": "Bachelor degree in Computer Engineering at UniCA. Master's degree in Computer Engineering, Cybersecurity and Artificial Intelligence @ UniCA. Software Security Consultant @ IMQ Minded Security, Milan", 
+            "avatar": "pala.png",
+            "link": "https://www.linkedin.com/in/federico-loi/"
+        },
+        {
+            "Name":"Matteo Sanna",
+            "Nick": "sanmatte", 
+            "role": "", 
+            "position": "Ongoing bachelor's degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "default.jpg",
+            "link": "https://www.linkedin.com/in/matteo-sanna-19b805249"
+        },
+        {
+            "Name":"Diego Soi",
+            "Nick": "diesoi", 
+            "role": "", 
+            "position": "PhD Student in Computer Engineering @ UniCA", 
+            "avatar": "diesoi.png",
+            "link": "https://it.linkedin.com/in/diego-soi-67a564216"
+        },
+        {
+            "Name":"Lorenzo Corrias",
+            "Nick": "justlel", 
+            "role": "", 
+            "position": "Computer Science student @ UniCA. Junior CyberSecurity for Pluribus One.", 
+            "avatar": "corrias.png",
+            "link": "https://justlel.me"
+        },
+        {
+            "Name":"Michele Fiori",
+            "Nick": "", 
+            "role": "", 
+            "position": "High School @ ITI G.M. Angioy. Ongoing Bachelor's degree in Computer Science @ UniCA. Current Work as Software Engineer", 
+            "avatar": "fiori.png",
+            "link": "https://www.linkedin.com/in/michele-fiori03/"
+        }
     ],
     "Rev":[
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy", "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"}
+        {
+            "Name":"Massimo Sanna",
+            "Nick": "SannaZ", 
+            "role": "", 
+            "position": "Computer Science high school @ IIS. Dionigi Scano, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "sannaZ.png",
+            "link": "https://www.linkedin.com/in/massimo-sanna"
+        }
     ],
     "Pwn":[
-        {"Name":"Prof. Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy", "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"}
+        {
+            "Name":"Emanuele Massidda",
+            "Nick": "manu_massi", 
+            "role": "", 
+            "position": "PhD Student in Cybersecurity @ UniCa. Master's Degree in Computer Engineering, Cybersecurity and Artificial Intelligence @ UniCA", 
+            "avatar": "massidda.png",
+            "link": "https://www.linkedin.com/in/emmanuele-massidda-6b299920b/"
+        },
+        {
+            "Name":"Diego Oliva",
+            "Nick": "doliv", 
+            "role": "", 
+            "position": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
+            "avatar": "oliva.png",
+            "link": "https://doliv.cc"
+        },
+        {
+            "Name":"Matteo Chiesa",
+            "Nick": "church", 
+            "role": "", 
+            "position": "Scientific high school @ A. Pacinotti, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "chiesa.png",
+            "link": "https://github.com/Church-17"
+        }
     ],
-    "Ex members - Associates":[
-        {"Name":"Prof. Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy", "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"},
-        {"Name":"Davide Maiorca","Nick": "astralXploit0", "role": "Captain", "position": "Associate Professor of Computer Engineering @ University of Cagliari, Italy",  "avatar": "https://srdnlen.it/assets/img/avatars/astralXploit0.png"}
+    "Ex players - Associates":[
+        {  
+            "Name":"Massimo Bartoletti",
+            "Nick": "", 
+            "role": "", 
+            "position": "Massimo Bartoletti is Associate Professor at the Department of Mathematics and Computer Science of the University of Cagliari. His research activity concerns the development of tools and techniques for the specification, analysis and verification of software, with a special emphasis on security. Massimo Bartoletti is founder of the laboratory \"Blockchain@Unica\",  one of the largest academic research group on blockchain technologies in Italy, director of a node of the Cyber Security National Lab for the University of Cagliari, and core member of the CINI working group on Blockchain.", 
+            "avatar": "bartoletti.jpg",
+            "link": "https://blockchain.unica.it/"
+        },
+        {
+            "Name":"Livio Pompianu",
+            "Nick": "", 
+            "role": "", 
+            "position": "Assistant Professor of Computer Science @ UniCA, Italy", 
+            "avatar": "pompianu.png",
+            "link": "https://aibd.unica.it/people/livio-pompianu"
+        },
+        {  
+            "Name":"Marco Martalò",
+            "Nick": "", 
+            "role": "", 
+            "position": "PhD in Information Technology @ University of Parma in 2009. Associate Professor @ Dept. of Electrical and Electronical Engineering, UniCA, Italy", 
+            "avatar": "martalo.png",
+            "link": "https://www.linkedin.com/in/marco-martalo/"
+        }
 ]   
+
+
 }
