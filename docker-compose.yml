@@ -20,6 +20,8 @@ services:
   ghost:
     image: ghost:5-alpine
     restart: always
+    ports:
+      - "2368:2368"
     environment:
       # see https://ghost.org/docs/config/#configuration-options
       database__client: mysql
@@ -35,12 +37,12 @@ services:
       traefik_srdnlen_website:
     volumes:
       - ghost:/var/lib/ghost/content
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.ghosttestingwebsite.entrypoints=https"
-      - "traefik.http.routers.ghosttestingwebsite.tls=true"
-      - "traefik.http.routers.ghosttestingwebsite.tls.certresolver=letsencrypt"
-      - "traefik.http.routers.ghosttestingwebsite.rule=Host(`ghosttestingwebsite.chall.srdnlen.it`)"
+    #labels:
+    #  - "traefik.enable=true"
+    #  - "traefik.http.routers.ghosttestingwebsite.entrypoints=https"
+    #  - "traefik.http.routers.ghosttestingwebsite.tls=true"
+    #  - "traefik.http.routers.ghosttestingwebsite.tls.certresolver=letsencrypt"
+    #  - "traefik.http.routers.ghosttestingwebsite.rule=Host(`ghosttestingwebsite.chall.srdnlen.it`)"
 
   db:
     image: mysql:8.0
