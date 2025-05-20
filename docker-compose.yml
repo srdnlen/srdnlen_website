@@ -37,6 +37,12 @@ services:
       traefik_srdnlen_website:
     volumes:
       - ghost:/var/lib/ghost/content
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.basiclfi.entrypoints=https"
+      - "traefik.http.routers.basiclfi.tls=true"
+      - "traefik.http.routers.basiclfi.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.basiclfi.rule=Host(`ghosttestingwebsite.chall.srdnlen.it`)"
 
   db:
     image: mysql:8.0
