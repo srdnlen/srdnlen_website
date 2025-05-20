@@ -47,7 +47,7 @@
                                                             <img src="../static/images/avatar/{{p['avatar']}}" alt="{{p['Nick']}}" class="card-img-top">
                                                         </center>
                                                         <div class="card-body">
-                                                        <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} ({{p['role']}})</b>{% endif %}</h4></a>
+                                                        <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} {% if p['role'] %} ({{p['role']}}) {% endif %}</b>{% endif %}</h4></a>
                                                         <p class="card-text">{{p['position']}}</p>
                                                         </div>
                                                     </div>
@@ -68,7 +68,7 @@
                                                                 <img src="../static/images/avatar/{{p['avatar']}}" alt="{{p['Nick']}}" class="card-img-top">
                                                             </center>
                                                             <div class="card-body">
-                                                            <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} ({{p['role']}})</b>{% endif %}</h4></a>
+                                                            <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} {% if p['role'] %} ({{p['role']}}) {% endif %}</b>{% endif %}</h4></a>
                                                             <p class="card-text">{{p['position']}}</p>
                                                             </div>
                                                         </div>
@@ -86,7 +86,7 @@
                                                         <img src="../static/images/avatar/{{p['avatar']}}" alt="{{p['Nick']}}" class="card-img-top">
                                                     </center>
                                                     <div class="card-body">
-                                                    <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} ({{p['role']}})</b>{% endif %}</h4></a>
+                                                    <a href="{{p['link']}}"><h4 class="card-title">{{p['Name']}} {% if p['Nick'] %} - <b>Nick: {{p['Nick']}} {% if p['role'] %} ({{p['role']}}) {% endif %}</b>{% endif %}</h4></a>
                                                     <p class="card-text">{{p['position']}}</p>
                                                     </div>
                                                 </div>
