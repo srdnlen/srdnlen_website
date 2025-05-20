@@ -1,6 +1,7 @@
 networks:
   traefik_srdnlen_website:
-  external: true
+    external: true
+
 services:
   pythonapp:
     build:
