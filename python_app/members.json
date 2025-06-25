@@ -23,6 +23,14 @@
             "position": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
             "avatar": "sechi.png",
             "link": "https://www.linkedin.com/in/lorenzo-siriu/"
+        },
+        {
+            "Name":"Riccardo Era",
+            "Nick": "richwas", 
+            "role": "", 
+            "position": "Computer Science high school @ IIS Aproni-Fermi, Oristano. Ongoing bachelor degree in Computer Science and Data Analytics @ UniCA", 
+            "avatar": "era.jpeg",
+            "link": "https://www.linkedin.com/in/riccardo-era/"
         }
     ],
     "Foren/Misc":[
@@ -178,6 +186,14 @@
         }
     ],
     "Ex players - Associates":[
+        {
+            "Name": "Giorgio Giacinto",
+            "Nick": "",
+            "role": "",
+            "position": "Full Professor @ Dept. Electrical and Electronical Engineering, UniCA, Italy",
+            "avatar": "default.jpg",
+            "link": "",
+        },
         {  
             "Name":"Massimo Bartoletti",
             "Nick": "", 
