@@ -115,9 +115,14 @@
                       <br>
                       
                       <!-- The dots/circles -->
+                      {% set labels = ['../static/icons/icon-lock.svg', 'Foren', '../static/icons/icon-globe-web.svg', 'Rev', 'Pwn', '../static/icons/icon-user.svg'] %}
                       <div style="text-align:center">
                         {% for i in range(members.keys() | length)%}
-                            <span class="dot" onclick="currentSlide({{i+1}})"></span>
+                            <span onclick="currentSlide({{i+1}})" style="display: inline-flex; align-items: center;">
+                                <i>
+                                    <img src={{labels[i]}} alt="icon-lock" style="vertical-align: middle;">
+                                </i>
+                            </span>
                         {% endfor %}
                       </div>
                     <hr>
