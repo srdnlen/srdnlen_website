@@ -237,7 +237,7 @@
             "position": "Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
             "avatar": "sulis.jog",
             "link": ""
-        }
+        },
         {
             "Name":"Massimo Sanna",
             "Nick": "SannaZ", 
@@ -245,9 +245,33 @@
             "position": "Computer Science high school @ IIS. Dionigi Scano, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
             "avatar": "sannaZ.png",
             "link": "https://www.linkedin.com/in/massimo-sanna"
+        },
+        {
+            "Name":"Daniele Orrù",
+            "Nick": "Den1211", 
+            "role": "", 
+            "position": "Computer Science high school @ IIS. Fermi, Carbonia. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "orru.png",
+            "link": ""
+        },
+        {
+            "Name":"Tommaso Casti",
+            "Nick": "T0mm1", 
+            "role": "", 
+            "position": "High School Scientific @ Euclide. Ongoing Bachelor's degree in Computer Engineering @ UniCA", 
+            "avatar": "casti.jpg",
+            "link": "https://www.linkedin.com/in/tommaso-casti-17b71a2a8"
         }
     ],
     "Pwn":[
+        {
+            "Name":"Davide Maiorca",
+            "Nick": "davezero", 
+            "role": "Captain Team Pwn", 
+            "position": "Associate Professor @ UniCA", 
+            "avatar": "maiorca.png",
+            "link": ""
+        },
         {
             "Name":"Emanuele Massidda",
             "Nick": "manu_massi", 
@@ -271,6 +295,22 @@
             "position": "Scientific high school @ A. Pacinotti, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
             "avatar": "chiesa.png",
             "link": "https://github.com/Church-17"
+        },
+        {
+            "Name":"Roberto Antonio Usai",
+            "Nick": "TheRoberto2512", 
+            "role": "", 
+            "position": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science and Data Analytics @ UniCA", 
+            "avatar": "usai.jpg",
+            "link": "http://www.linkedin.com/in/roberto-antonio-usai"
+        },
+        {
+            "Name":"Filippo Zuddas",
+            "Nick": "filaj", 
+            "role": "", 
+            "position": "Ongoing bachelor degree in Computer Science and Data Analytics @ UniCA", 
+            "avatar": "default.jpg",
+            "link": ""
         }
     ],
     "Ex players - Associates":[
