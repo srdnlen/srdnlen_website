@@ -31,6 +31,14 @@
             "position": "Computer Science high school @ IIS Aproni-Fermi, Oristano. Ongoing bachelor degree in Computer Science and Data Analytics @ UniCA", 
             "avatar": "era.jpeg",
             "link": "https://www.linkedin.com/in/riccardo-era/"
+        },
+        {
+            "Name":"Davide Ghisu",
+            "Nick": "NicoXVI", 
+            "role": "", 
+            "position": "Ongoing Computer Science high school @ ITIS OTHOCA, Oristano.", 
+            "avatar": "ghisu.jpeg",
+            "link": ""
         }
     ],
     "Foren/Misc":[
@@ -51,12 +59,28 @@
             "link": "https://www.linkedin.com/in/luca-vitaliano-damiano-8a0274153/"
         },
         {
+            "Name":"Francesco Rocchiccioli",
+            "Nick": "TistaMilani", 
+            "role": "", 
+            "position": "Technical diploma in Computer Science @ ITIS Othoca. Ongoing Bachelor degree in Computer Science @ UniCA.", 
+            "avatar": "rochiccioli.jpg",
+            "link": "https://it.linkedin.com/in/francesco-rocchiccioli-641381250"
+        },
+        {
             "Name":"Simone Cocco",
             "Nick": "d1dpvl", 
             "role": "", 
             "position": "Technical diploma @ ITIS G. Marconi Cagliari. Ongoing Bachelor degree in Applied Science & Data Analytics @ UniCA. Currently learning hardware security", 
             "avatar": "cocco.JPG",
             "link": "https://www.linkedin.com/in/silvia-lucia-sanna-894353151/"
+        },
+        {
+            "Name":"Alessandro Melis",
+            "Nick": "cvrlx", 
+            "role": "", 
+            "position": "PhD in Computer Science @ UniCA", 
+            "avatar": "melis.jpeg",
+            "link": ""
         },
         {
             "Name":"Nicholas Meli",
@@ -75,12 +99,44 @@
             "link": "https://www.linkedin.com/in/nicola-deidda-543a8b180/"
         },
         {
+            "Name":"Alessio Sechi",
+            "Nick": "doku", 
+            "role": "", 
+            "position": "Data Science undergraduate with a strong interest in AI, cybersecurity, and the social sciences. ", 
+            "avatar": "sechiA.jpeg",
+            "link": ""
+        },
+        {
+            "Name":"Alberto Olla",
+            "Nick": "khibus", 
+            "role": "", 
+            "position": "Bacherlor's degree in Computer Science and Ongoing Masters' degree in Computer Science @ UniCA.", 
+            "avatar": "olla.jpg",
+            "link": "www.linkedin.com/in/alberto-olla-375a46321"
+        },
+        {
             "Name":"Irene Pranteddu",
             "Nick": "irina", 
             "role": "", 
             "position": "Technical diploma @ IIS. Asproni-Fermi Iglesias. Ongoing bachelor degree in Computer Engineering @ UniCA", 
             "avatar": "pranteddu.jpg",
             "link": ""
+        },
+        {
+            "Name":"Alessandro Marmillata",
+            "Nick": "milka-cookies", 
+            "role": "", 
+            "position": "Cyber Security Analyst and Telecommunication Engineering Student @ UniCA", 
+            "avatar": "marmillata.jpeg",
+            "link": "https://www.linkedin.com/in/alessandromarmillata/"
+        },
+        {
+            "Name":"Mirko Angius",
+            "Nick": "inn3r", 
+            "role": "", 
+            "position": "Technical diploma in Computer Science @ ITIS Michele Giua. Ongoing Bachelor degree in Computer Science @ UniCA.", 
+            "avatar": "angius.png",
+            "link": "https://linkedin.com/in/mirko-angius"
         }
     ],
     "Web":[
@@ -104,7 +160,7 @@
             "Name":"Federico Loi",
             "Nick": "octaviusss", 
             "role": "", 
-            "position": "Security Engineer @ IMQ Minded Security, Milan. Master's Degree in Cybersecurity @ UniCA", 
+            "position": "Security Engineer @ AWS. Master's Degree in Cybersecurity @ UniCA", 
             "avatar": "loi.png",
             "link": "https://www.linkedin.com/in/federico-loi/"
         },
@@ -133,6 +189,14 @@
             "link": "https://it.linkedin.com/in/diego-soi-67a564216"
         },
         {
+            "Name":"Christian Scano",
+            "Nick": "DarkKnight", 
+            "role": "", 
+            "position": "National PhD Student in Artificial Intelligence @ Roma \"La Sapienza\"", 
+            "avatar": "scano.png",
+            "link": "https://www.linkedin.com/in/christian-scano-4a8753217"
+        },
+        {
             "Name":"Lorenzo Corrias",
             "Nick": "justlel", 
             "role": "", 
@@ -147,9 +211,33 @@
             "position": "High School @ ITI G.M. Angioy. Ongoing Bachelor's degree in Computer Science @ UniCA. Current Work as Software Engineer", 
             "avatar": "fiori.png",
             "link": "https://www.linkedin.com/in/michele-fiori03/"
+        },
+        {
+            "Name":"Francesco Meola",
+            "Nick": "frank21", 
+            "role": "", 
+            "position": "High School @ ITI Michele Giua. Ongoing Bachelor's degree in Computer Science @ UniCA.", 
+            "avatar": "default.jpg",
+            "link": ""
         }
     ],
     "Rev":[
+        {
+            "Name":"Sofia Tocco",
+            "Nick": "tosofia", 
+            "role": "Captain Team Rev", 
+            "position": "Computer Science high school @ IIS. Othoca, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
+            "avatar": "tocco.jpg",
+            "link": ""
+        },
+        {
+            "Name":"Simone Sulis",
+            "Nick": "Salsa", 
+            "role": "", 
+            "position": "Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "sulis.jog",
+            "link": ""
+        }
         {
             "Name":"Massimo Sanna",
             "Nick": "SannaZ", 
@@ -192,7 +280,7 @@
             "role": "",
             "position": "Full Professor @ Dept. Electrical and Electronical Engineering, UniCA, Italy",
             "avatar": "default.jpg",
-            "link": "",
+            "link": ""
         },
         {  
             "Name":"Massimo Bartoletti",
