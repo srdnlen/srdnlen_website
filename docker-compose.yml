@@ -16,7 +16,7 @@ services:
       - "traefik.http.routers.srdnlne.entrypoints=https"
       - "traefik.http.routers.srdnlen.tls=true"
       - "traefik.http.routers.srdnlen.tls.certresolver=letsencrypt"
-      - "traefik.http.routers.srdnlen.rule=Host(`srdnlen.it`)"
+      - "traefik.http.routers.srdnlen.rule=HostRegexp(`{host:(www\\.)?srdnlen.it}`)"
   ghost:
     image: ghost:5-alpine
     restart: always
