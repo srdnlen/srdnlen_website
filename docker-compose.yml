@@ -13,10 +13,10 @@ services:
       traefik_srdnlen_website:
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.testingwebsite.entrypoints=https"
-      - "traefik.http.routers.testingwebsite.tls=true"
-      - "traefik.http.routers.testingwebsite.tls.certresolver=letsencrypt"
-      - "traefik.http.routers.testingwebsite.rule=Host(`testingwebsite.chall.srdnlen.it`)"
+      - "traefik.http.routers.srdnlne.entrypoints=https"
+      - "traefik.http.routers.srdnlen.tls=true"
+      - "traefik.http.routers.srdnlen.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.srdnlen.rule=Host(`srdnlen.it`)"
   ghost:
     image: ghost:5-alpine
     restart: always
