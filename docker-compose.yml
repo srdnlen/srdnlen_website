@@ -13,7 +13,7 @@ services:
       traefik_srdnlen_website:
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.srdnlne.entrypoints=https"
+      - "traefik.http.routers.srdnlen.entrypoints=https"
       - "traefik.http.routers.srdnlen.tls=true"
       - "traefik.http.routers.srdnlen.tls.certresolver=letsencrypt"
       - "traefik.http.routers.srdnlen.rule=HostRegexp(`{host:(www\\.)?srdnlen.it}`)"
