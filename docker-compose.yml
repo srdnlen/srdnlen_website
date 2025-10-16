@@ -1,59 +1,68 @@
-networks:
-  traefik_srdnlen_website:
-    external: true
-
 services:
   pythonapp:
     build:
       context: ./python_app
       dockerfile: Dockerfile
-    restart: always
-    pull_policy: build
+    restart: unless-stopped
     networks:
-      traefik_srdnlen_website:
+      traefik:
+      srdnlen-website-internal:
+    depends_on:
+      - srdnlen-website-ghost
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.srdnlen.entrypoints=https"
       - "traefik.http.routers.srdnlen.tls=true"
-      - "traefik.http.routers.srdnlen.tls.certresolver=letsencrypt"
-      - "traefik.http.routers.srdnlen.rule=HostRegexp(`{host:(www\\.)?srdnlen.it}`)"
-  ghost:
+      - "traefik.http.routers.srdnlen.tls.certresolver=cloudflare"
+      - "traefik.http.routers.srdnlen.rule=HostRegexp(`${SRDNLEN_WEBSITE_DOMAIN}`)" # (www\\.)?srdnlen.it}`)"
+
+  srdnlen-website-ghost:
     image: ghost:5-alpine
-    restart: always
-    ports:
-      - "2368:2368"
+    restart: unless-stopped
     environment:
       # see https://ghost.org/docs/config/#configuration-options
       database__client: mysql
-      database__connection__host: db
+      database__connection__host: srdnlen-website-db
       database__connection__user: root
       database__connection__password: example
       database__connection__database: ghost
       # this url value is just an example, and is likely wrong for your environment!
       url: http://localhost:2368
       # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
-      NODE_ENV: development
+      # NODE_ENV: development
     networks:
-      traefik_srdnlen_website:
+      srdnlen-website-internal:
+    depends_on:
+      srdnlen-website-db:
+        condition: service_healthy
     volumes:
-      - ghost:/var/lib/ghost/content
+      - data:/var/lib/ghost/content
     #labels:
     #  - "traefik.enable=true"
     #  - "traefik.http.routers.ghosttestingwebsite.entrypoints=https"
     #  - "traefik.http.routers.ghosttestingwebsite.tls=true"
-    #  - "traefik.http.routers.ghosttestingwebsite.tls.certresolver=letsencrypt"
+    #  - "traefik.http.routers.ghosttestingwebsite.tls.certresolver=cloudflare"
     #  - "traefik.http.routers.ghosttestingwebsite.rule=Host(`ghosttestingwebsite.chall.srdnlen.it`)"
 
-  db:
+  srdnlen-website-db:
     image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 5s
+      retries: 20
     volumes:
       - db:/var/lib/mysql
     networks:
-      traefik_srdnlen_website:
+      srdnlen-website-internal:
 
 volumes:
-  ghost:
+  data:
   db:
+
+networks:
+  traefik:
+    external: true
+  srdnlen-website-internal:
