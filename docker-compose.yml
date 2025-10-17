@@ -14,7 +14,7 @@ services:
       - "traefik.http.routers.srdnlen.entrypoints=https"
       - "traefik.http.routers.srdnlen.tls=true"
       - "traefik.http.routers.srdnlen.tls.certresolver=cloudflare"
-      - "traefik.http.routers.srdnlen.rule=HostRegexp(`${SRDNLEN_WEBSITE_DOMAIN}`)" # (www\\.)?srdnlen.it}`)"
+      - "traefik.http.routers.srdnlen.rule=Host(`${SRDNLEN_WEBSITE_DOMAIN}`) || Host(`www.${SRDNLEN_WEBSITE_DOMAIN}`)" # (www\\.)?srdnlen.it}`)"
 
   srdnlen-website-ghost:
     image: ghost:5-alpine
