@@ -1,0 +1,7 @@
+---
+title: "Our Members"
+description: "Our amazing members"
+layout: "simple" 
+---
+
+{{< team-cards >}}

@@ -1,0 +1,52 @@
+{{ $data := site.Data.members }}
+
+{{ range $category, $members := $data }}
+
+  <div class="mb-12">
+    <div class="flex items-center gap-4 mb-8">
+      <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-100 m-0">
+        {{ $category }}
+      </h2>
+      <div class="h-0.5 flex-grow rounded-full bg-gradient-to-r from-primary-500/50 to-transparent"></div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; width: 100%;">
+
+      {{ range $members }}
+
+        {{/* IMAGE LOGIC */}}
+        {{ $avatar := "default.jpg" }}
+        {{ if .avatar }} {{ $avatar = .avatar }} {{ end }}
+        {{ $imagePath := printf "img/members/%s" $avatar }}
+        {{ $imageResource := resources.Get $imagePath }}
+        {{ $imgSrc := "" }}
+        {{ if $imageResource }} {{ $imgSrc = $imageResource.RelPermalink }} {{ else }} {{ $imgSrc = $avatar }} {{ end }}
+
+        <div class="bg-white dark:bg-neutral-700 backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 rounded-lg shadow-sm p-6 flex flex-col items-center text-center h-full">
+          
+          {{/* Image Section */}}
+          <div class="flex-shrink-0" style="width: 170px; height: 170px;">
+            <img src="{{ $imgSrc }}" 
+                 alt="{{ .name }}"
+                 class="rounded-full border border-neutral-200 dark:border-neutral-600"
+                 style="width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 1 / 1; max-width: none;">
+          </div>
+
+          {{/* Content Section */}}
+          <div class="mt-4 w-full flex-1 flex flex-col">
+            
+            <h3 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 m-0">
+              {{ .name }}{{ if .nick }} - {{.nick}} {{end}}
+            </h3>
+
+            <p class="text-neutral-600 dark:text-neutral-300 text-sm my-auto leading-snug">
+              {{ .position }}
+            </p>
+
+          </div>
+        </div>
+
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

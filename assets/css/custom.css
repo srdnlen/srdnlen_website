@@ -1,0 +1,22 @@
+/* #main-content h2 { */
+/*     font-size: 30px; */
+/* } */
+/**/
+/* #main-content p { */
+/*     font-size: 20px;  */
+/* } */
+
+/* Target the specific content div inside the timeline */
+.article-content .timeline > div > div.relative {
+    /* 1. Set the background colors using theme palette */
+    @apply bg-neutral-100 dark:bg-neutral-800;
+
+    /* 2. Add padding so text doesn't touch the edges */
+    @apply p-4;
+
+    /* 3. Add rounded corners for a card-like look */
+    @apply rounded-xl;
+
+    /* 4. Optional: Add a subtle shadow */
+    @apply shadow-sm;
+}

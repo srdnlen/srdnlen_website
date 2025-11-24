@@ -1,0 +1,13 @@
+{
+  "name": "srdnlen-website-dc",
+  "image": "ghcr.io/lore-corrias/devcontainer",
+  "service": "srdnlen-website-dc",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,z,rw",
+  "workspaceFolder": "/workspace",
+  "runArgs": [
+    "--name",
+    "srdnlen-website-dc",
+    "-p",
+    "1337:1337"
+  ]
+}
