@@ -17,7 +17,6 @@ contentDir = 'content'
   name = "Srdnlen"
   image = "img/logo.png"
   headline = "UniCA CTF team - Sardinia Len APS"
-  # bio = "A little bit about you"
    links = [
      { github = "https://github.com/srdnlen" },
      { instagram = "https://instagram.com/srdnlen" },

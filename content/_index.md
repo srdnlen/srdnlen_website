@@ -33,4 +33,4 @@ Our team is constantly competing in CTFs and cybersecurity-related events, as we
 
 {{< /timeline >}}
 
-{{< list limit=2 title="Some of our latest works">}}
+{{< list limit=2 title="Some of our latest works" >}}

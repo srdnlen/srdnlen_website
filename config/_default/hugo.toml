@@ -3,7 +3,7 @@
 # https://nunocoracao.github.io/blowfish/docs/getting-started/
 
 theme = "blowfish"
-# baseURL = "https://your_domain.com/"
+baseURL = "https://srdnlen.it/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
@@ -22,8 +22,8 @@ enableEmoji = true
 [taxonomies]
   tag = "tags"
   category = "categories"
-  author = "authors"
   series = "series"
+  author = "authors"
 
 [sitemap]
   changefreq = 'daily'
