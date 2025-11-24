@@ -132,19 +132,11 @@
         },
         {
             "Name":"Mirko Angius",
-            "nick": "inn3r", 
+            "Nick": "inn3r", 
             "role": "", 
-            "position": "technical diploma in computer science @ itis othoca, oristano. ongoing bachelor degree in computer science @ unica.", 
+            "position": "Technical diploma in Computer Science @ ITIS OTHOCA, Oristano. Ongoing Bachelor degree in Computer Science @ UniCA.", 
             "avatar": "angius.png",
             "link": "https://linkedin.com/in/mirko-angius"
-        },
-	{
-            "Name":"Salvatore Castello",
-            "nick": "SalvaCà",
-            "role": "",
-            "position": "Master's Degree in Cybersecurity @ UniCA",
-            "avatar": "castello.jpg",
-            "link": "https://www.linkedin.com/in/salvatore-a-castello/"
         }
     ],
     "Web":[
