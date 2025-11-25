@@ -2,9 +2,9 @@
  "name": "Riccardo Era @richwas",
  "image": "/img/members/era.jpeg",
  "bio": "Computer Science high school @ IIS Aproni-Fermi, Oristano. Ongoing bachelor degree in Computer Science and Data Analytics @ UniCA",
- "tags": [
-  "crypto"
- ],
+ "categories": {
+  "main": "crypto"
+ },
  "social": [
   {
    "linkedin": "https://www.linkedin.com/in/riccardo-era/"

@@ -2,9 +2,9 @@
  "name": "Alessandro Frau @takenx10",
  "image": "/img/members/frau.png",
  "bio": "Software Developer and Cybersecurity Engineer @ Digital Defense",
- "tags": [
-  "web"
- ],
+ "categories": {
+  "main": "web"
+ },
  "social": [
   {
    "linkedin": "https://www.linkedin.com/in/alessandro-frau-takenx10/"

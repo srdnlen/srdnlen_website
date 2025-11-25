@@ -2,9 +2,10 @@
  "name": "Davide Maiorca @davezero",
  "image": "/img/members/maiorca.png",
  "bio": "Associate Professor @ UniCA",
- "tags": [
-  "pwn"
- ],
+ "categories": {
+  "main": "captain",
+  "secondary": ["pwn"]
+ },
  "social": [
   {
    "linkedin": ""

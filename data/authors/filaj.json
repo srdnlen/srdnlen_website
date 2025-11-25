@@ -2,9 +2,9 @@
  "name": "Filippo Zuddas @filaj",
  "image": "/img/members/default.jpg",
  "bio": "Ongoing bachelor degree in Computer Science and Data Analytics @ UniCA",
- "tags": [
-  "pwn"
- ],
+ "categories": {
+  "main": "pwn"
+ },
  "social": [
   {
    "linkedin": ""

@@ -1,0 +1,43 @@
+{{ $tag := . }}
+{{ $t := lower $tag }}
+{{ $badgeClass := "badge-default" }}
+{{ $badgeSymbol := "" }}
+
+{{ if eq $t "web" }}
+  {{ $badgeClass = "badge-web" }}
+  {{ $badgeSymbol = "web-icon.svg" }}
+{{ else if eq $t "crypto" }}
+  {{ $badgeClass = "badge-crypto" }}
+  {{ $badgeSymbol = "crypto-icon.svg" }}
+{{ else if eq $t "pwn" }}
+  {{ $badgeClass = "badge-pwn" }}
+  {{ $badgeSymbol = "pwn-icon.svg" }}
+{{ else if eq $t "rev" }}
+  {{ $badgeClass = "badge-rev" }}
+  {{ $badgeSymbol = "rev-icon.svg" }}
+{{ else if eq $t "forensics" }}
+  {{ $badgeClass = "badge-forensics" }}
+  {{ $badgeSymbol = "forensics-icon.svg" }}
+{{ else if eq $t "misc" }}
+  {{ $badgeClass = "badge-misc" }}
+  {{ $badgeSymbol = "misc-icon.svg" }}
+{{ else if eq $t "trainer" }}
+  {{ $badgeClass = "badge-trainer" }}
+  {{ $badgeSymbol = "trainer-icon.svg" }}
+{{ else if eq $t "captain" }}
+  {{ $badgeClass = "badge-captain" }}
+  {{ $badgeSymbol = "captain-icon.svg" }}
+{{ else if eq $t "professor" }}
+  {{ $badgeClass = "badge-professor" }}
+  {{ $badgeSymbol = "professor-icon.svg" }}
+{{ end }}
+
+<span class="m-1 badge-custom align-middle {{ $badgeClass }}">
+  {{ if ne $badgeSymbol "" }}
+    {{ $res := resources.Get (printf "icons/%s" $badgeSymbol) }}
+    {{ if $res }}
+      {{ $res.Content | safeHTML }}
+    {{ end }}
+  {{ end }}
+  {{ title $tag }}
+</span>

@@ -2,9 +2,10 @@
  "name": "Lorenzo Corrias @lore-corrias",
  "image": "/img/members/corrias.png",
  "bio": "Bachelor's degree in Computer Science @ Unica. Studying @ UniCa's Cybersecurity master course.",
- "tags": [
-  "web"
- ],
+ "categories": {
+  "main": "trainer",
+  "secondary": ["web"]
+ },
  "social": [
   {
    "linkedin": "https://justlel.me"

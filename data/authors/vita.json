@@ -2,10 +2,12 @@
  "name": "Luca Vitaliano @vita",
  "image": "/img/members/damiano.jpg",
  "bio": "Technical diploma in Computer Science @ ITIS Michele Giua. Ongoing Bachelor degree in Computer Engineering @ UniCA.",
- "tags": [
-  "forensics",
-  "misc"
- ],
+ "categories": {
+  "main": "forensics",
+  "secondary": [
+   "misc"
+  ]
+ },
  "social": [
   {
    "linkedin": "https://www.linkedin.com/in/luca-vitaliano-damiano-8a0274153/"

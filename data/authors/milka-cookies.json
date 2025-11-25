@@ -2,10 +2,12 @@
  "name": "Alessandro Marmillata @milka-cookies",
  "image": "/img/members/marmillata.jpeg",
  "bio": "Cyber Security Analyst and Telecommunication Engineering Student @ UniCA",
- "tags": [
-  "forensics",
-  "misc"
- ],
+ "categories": {
+  "main": "forensics",
+  "secondary": [
+   "misc"
+  ]
+ },
  "social": [
   {
    "linkedin": "https://www.linkedin.com/in/alessandromarmillata/"

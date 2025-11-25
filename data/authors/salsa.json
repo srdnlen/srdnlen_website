@@ -2,9 +2,9 @@
  "name": "Simone Sulis @Salsa",
  "image": "/img/members/sulis.jpg",
  "bio": "Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA",
- "tags": [
-  "rev"
- ],
+ "categories": {
+  "main": "rev"
+ },
  "social": [
   {
    "linkedin": ""

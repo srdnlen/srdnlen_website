@@ -2,9 +2,9 @@
  "name": "Diego Oliva @doliv",
  "image": "/img/members/oliva.png",
  "bio": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA",
- "tags": [
-  "pwn"
- ],
+ "categories": {
+  "main": "pwn"
+ },
  "social": [
   {
    "linkedin": "https://doliv.cc"

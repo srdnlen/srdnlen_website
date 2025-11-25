@@ -2,10 +2,12 @@
  "name": "Francesco Rocchiccioli @TistaMilani",
  "image": "/img/members/rochiccioli.jpg",
  "bio": "Technical diploma in Computer Science @ ITIS Othoca. Ongoing Bachelor degree in Computer Science @ UniCA.",
- "tags": [
-  "forensics",
-  "misc"
- ],
+ "categories": {
+  "main": "forensics",
+  "secondary": [
+   "misc"
+  ]
+ },
  "social": [
   {
    "linkedin": "https://it.linkedin.com/in/francesco-rocchiccioli-641381250"

@@ -2,10 +2,12 @@
  "name": "Mirko Angius @inn3r",
  "image": "/img/members/angius.png",
  "bio": "technical diploma in computer science @ itis othoca, oristano. ongoing bachelor degree in computer science @ unica.",
- "tags": [
-  "forensics",
-  "misc"
- ],
+ "categories": {
+  "main": "forensics",
+  "secondary": [
+   "misc"
+  ]
+ },
  "social": [
   {
    "linkedin": "https://linkedin.com/in/mirko-angius"

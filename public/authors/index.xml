@@ -7,12 +7,222 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Srdnlen</copyright>
-    <lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1337/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1337/authors/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Lore-Corrias</title>
+      <title>Alberto Olla</title>
+      <link>http://localhost:1337/authors/khibus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/khibus/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Alessandro Frau</title>
+      <link>http://localhost:1337/authors/takenx10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/takenx10/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Alessandro Marmillata</title>
+      <link>http://localhost:1337/authors/milka-cookies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/milka-cookies/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Alessandro Melis</title>
+      <link>http://localhost:1337/authors/cvrlx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/cvrlx/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Alessio Sechi</title>
+      <link>http://localhost:1337/authors/doku/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/doku/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Bruno Pala</title>
+      <link>http://localhost:1337/authors/gheddus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/gheddus/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Christian Scano</title>
+      <link>http://localhost:1337/authors/darkknight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/darkknight/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Daniele Orrù</title>
+      <link>http://localhost:1337/authors/den1211/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/den1211/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Davide Maiorca</title>
+      <link>http://localhost:1337/authors/davezero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/davezero/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Davide Sechi</title>
+      <link>http://localhost:1337/authors/guaddu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/guaddu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Diego Oliva</title>
+      <link>http://localhost:1337/authors/doliv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/doliv/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Diego Soi</title>
+      <link>http://localhost:1337/authors/diesoi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/diesoi/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Emanuele Massidda</title>
+      <link>http://localhost:1337/authors/manu_massi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/manu_massi/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Federico Loi</title>
+      <link>http://localhost:1337/authors/octaviusss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/octaviusss/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Filippo Zuddas</title>
+      <link>http://localhost:1337/authors/filaj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/filaj/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Francesco Meola</title>
+      <link>http://localhost:1337/authors/frank21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/frank21/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Francesco Rocchiccioli</title>
+      <link>http://localhost:1337/authors/tistamilani/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/tistamilani/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Giorgio Giacinto</title>
+      <link>http://localhost:1337/authors/giorgio-giacinto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/giorgio-giacinto/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Giovanni Manca</title>
+      <link>http://localhost:1337/authors/zaua/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/zaua/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Irene Pranteddu</title>
+      <link>http://localhost:1337/authors/irina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/irina/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Livio Pompianu</title>
+      <link>http://localhost:1337/authors/livio-pompianu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/livio-pompianu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Lorenzo Corrias</title>
       <link>http://localhost:1337/authors/lore-corrias/</link>
-      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1337/authors/lore-corrias/</guid>
       <description></description>
@@ -20,11 +230,211 @@
     </item>
     
     <item>
-      <title>Unickz</title>
+      <title>Lorenzo Pisu</title>
+      <link>http://localhost:1337/authors/pysu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/pysu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Lorenzo Siriu</title>
+      <link>http://localhost:1337/authors/lollo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/lollo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Luca Vitaliano</title>
+      <link>http://localhost:1337/authors/vita/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/vita/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Marco Martalò</title>
+      <link>http://localhost:1337/authors/marco-martalo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/marco-martalo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Massimo Bartoletti</title>
+      <link>http://localhost:1337/authors/massimo-bartoletti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/massimo-bartoletti/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Massimo Sanna</title>
+      <link>http://localhost:1337/authors/sannaz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/sannaz/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Matteo Chiesa</title>
+      <link>http://localhost:1337/authors/church/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/church/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Matteo Sanna</title>
+      <link>http://localhost:1337/authors/sanmatte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/sanmatte/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Michele Fiori</title>
+      <link>http://localhost:1337/authors/michele-fiori/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/michele-fiori/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mirko Angius</title>
+      <link>http://localhost:1337/authors/inn3r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/inn3r/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nicholas Meli</title>
       <link>http://localhost:1337/authors/unickz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1337/authors/unickz/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nicola Deidda</title>
+      <link>http://localhost:1337/authors/mrdeiv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/mrdeiv/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nicola Ghisu</title>
+      <link>http://localhost:1337/authors/nicoxvi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/nicoxvi/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Riccardo Era</title>
+      <link>http://localhost:1337/authors/richwas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/richwas/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Roberto Antonio Usai</title>
+      <link>http://localhost:1337/authors/theroberto2512/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/theroberto2512/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Salvatore Castello</title>
+      <link>http://localhost:1337/authors/salvaca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/salvaca/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Silvia Lucia Sanna</title>
+      <link>http://localhost:1337/authors/slsanna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/slsanna/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Simone Cocco</title>
+      <link>http://localhost:1337/authors/d1dpvl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/d1dpvl/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Simone Sulis</title>
+      <link>http://localhost:1337/authors/salsa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/salsa/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sofia Tocco</title>
+      <link>http://localhost:1337/authors/tosofia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/tosofia/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tommaso Casti</title>
+      <link>http://localhost:1337/authors/t0mm1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1337/authors/t0mm1/</guid>
       <description></description>
       
     </item>

@@ -41,3 +41,12 @@
 
 .badge-misc { background-color: #ea580c; color: #ffffff; border: 1px solid #9a3412; }
 .dark .badge-misc { background-color: #c2410c; color: #ffffff; border: 1px solid #fb923c; }
+
+.badge-trainer { background-color: #db2777; color: #ffffff; border: 1px solid #9d174d; }
+.dark .badge-trainer { background-color: #be185d; color: #ffffff; border: 1px solid #f472b6; }
+
+.badge-captain { background-color: #0891b2; color: #ffffff; border: 1px solid #155e75; }
+.dark .badge-captain { background-color: #164e63; color: #ffffff; border: 1px solid #22d3ee; }
+
+.badge-professor { background-color: #475569; color: #ffffff; border: 1px solid #1e293b; }
+.dark .badge-professor { background-color: #334155; color: #ffffff; border: 1px solid #94a3b8; }

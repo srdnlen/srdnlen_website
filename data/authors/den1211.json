@@ -2,9 +2,9 @@
  "name": "Daniele Orr\u00f9 @Den1211",
  "image": "/img/members/orru.jpg",
  "bio": "Computer Science high school @ IIS. Fermi, Carbonia. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA",
- "tags": [
-  "rev"
- ],
+ "categories": {
+  "main": "rev"
+ },
  "social": [
   {
    "linkedin": ""

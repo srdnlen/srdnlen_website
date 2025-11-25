@@ -2,9 +2,9 @@
  "name": "Massimo Sanna @SannaZ",
  "image": "/img/members/sannaZ.png",
  "bio": "Computer Science high school @ IIS. Dionigi Scano, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA",
- "tags": [
-  "rev"
- ],
+ "categories": {
+  "main": "rev"
+ },
  "social": [
   {
    "linkedin": "https://www.linkedin.com/in/massimo-sanna"

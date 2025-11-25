@@ -1,4 +1,6 @@
 import json
+import os
+from unidecode import unidecode
 
 """
 {
@@ -18,7 +20,7 @@ import json
 }
 """
 
-with open("./data/members.json", "r") as f:
+with open("./members.json", "r") as f:
     data = json.load(f)
     for category, members in data.items():
         for member in members:
@@ -27,20 +29,45 @@ with open("./data/members.json", "r") as f:
                     "name": member["name"] + " @" + member["nick"],
                     "image": f"/img/members/{member['avatar']}",
                     "bio": member["position"],
-                    "tags": [category.lower()] if category.lower() != "foren/misc" else ["forensics", "misc"],
-                    "social": [
-                        {"linkedin": member["link"]}
-                    ]
-                }
-            else:
-                data_new = {
-                    "name": member["name"],
-                    "image": f"/img/members/{member['avatar']}",
-                    "bio": member["position"],
+                    "categories": {
+                        "main": category.lower()
+                    } if category.lower() != "foren/misc" else {
+                        "main": "forensics",
+                        "secondary": ["misc"]
+                    },
                     "social": [
                         {"linkedin": member["link"]}
                     ]
                 }
 
-            with open("./data/authors/" + member["nick"].lower() + ".json", "w") as f2:
-                json.dump(data_new, f2, indent=1)
+                normalized_nick = unidecode(member["nick"]).lower()
+                with open("./data/authors/" + normalized_nick + ".json", "w") as f2:
+                    json.dump(data_new, f2, indent=1)
+                os.mkdir(f"./content/authors/{normalized_nick}")
+                with open(f"./content/authors/{normalized_nick}/_index.md", "w") as f2:
+                    f2.write(f"""---
+title: {member["name"]}
+layout: profile
+---""")
+            else:
+                data_new = {
+                    "name": member["name"],
+                    "image": f"/img/members/{member['avatar']}",
+                    "bio": member["position"],
+                    "categories": {
+                        "main": "professor"
+                    },
+                    "social": [
+                        {"linkedin": member["link"]}
+                    ]
+                }
+
+                normalized_name = unidecode(member["name"]).lower().replace(" ", "-")
+                with open("./data/authors/" + normalized_name + ".json", "w") as f2:
+                    json.dump(data_new, f2, indent=1)
+                os.mkdir(f"./content/authors/{normalized_name}")
+                with open(f"./content/authors/{normalized_name}/_index.md", "w") as f2:
+                    f2.write(f"""---
+title: {member["name"]}
+layout: profile
+---""")

@@ -2,9 +2,9 @@
  "name": "Lorenzo Pisu @pysu",
  "image": "/img/members/pisu.png",
  "bio": "PhD Student in Computer Engineering @ UniCA",
- "tags": [
-  "web"
- ],
+ "categories": {
+  "main": "web"
+ },
  "social": [
   {
    "linkedin": "https://www.linkedin.com/in/lorenzo-pisu-68a983226/"

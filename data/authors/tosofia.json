@@ -2,9 +2,9 @@
  "name": "Sofia Tocco @tosofia",
  "image": "/img/members/tocco.jpg",
  "bio": "Computer Science high school @ IIS. Othoca, Oristano. Ongoing bachelor degree in Computer Science @ UniCA",
- "tags": [
-  "rev"
- ],
+ "categories": {
+  "main": "rev"
+ },
  "social": [
   {
    "linkedin": ""
