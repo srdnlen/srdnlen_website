@@ -3,9 +3,9 @@
  "image": "/img/members/deidda.png",
  "bio": "PhD Student in Cybersecurity @ UniCA, IMT Lucca",
  "categories": {
-  "main": "forensics",
+  "main": "trainer",
   "secondary": [
-   "misc"
+   "forensics"
   ]
  },
  "social": [

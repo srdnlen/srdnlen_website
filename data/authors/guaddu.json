@@ -3,7 +3,8 @@
  "image": "/img/members/sechi.png",
  "bio": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA",
  "categories": {
-  "main": "crypto"
+  "main": "trainer",
+  "secondary": ["crypto"]
  },
  "social": [
   {

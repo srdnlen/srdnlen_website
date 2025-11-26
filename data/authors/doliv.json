@@ -3,7 +3,8 @@
  "image": "/img/members/oliva.png",
  "bio": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA",
  "categories": {
-  "main": "pwn"
+  "main": "trainer",
+  "secondary": ["pwn"]
  },
  "social": [
   {

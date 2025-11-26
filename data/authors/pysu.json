@@ -3,7 +3,8 @@
  "image": "/img/members/pisu.png",
  "bio": "PhD Student in Computer Engineering @ UniCA",
  "categories": {
-  "main": "web"
+  "main": "trainer",
+  "secondary": ["web"]
  },
  "social": [
   {

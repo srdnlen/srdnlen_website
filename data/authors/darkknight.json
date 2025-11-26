@@ -3,7 +3,8 @@
  "image": "/img/members/scano.png",
  "bio": "National PhD Student in Artificial Intelligence @ Roma \"La Sapienza\"",
  "categories": {
-  "main": "web"
+  "main": "trainer",
+  "secondary": ["web"]
  },
  "social": [
   {

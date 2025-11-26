@@ -3,7 +3,8 @@
  "image": "/img/members/sulis.jpg",
  "bio": "Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA",
  "categories": {
-  "main": "rev"
+  "main": "trainer",
+  "secondary": ["rev"]
  },
  "social": [
   {

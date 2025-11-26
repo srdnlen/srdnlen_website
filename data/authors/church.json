@@ -3,7 +3,8 @@
  "image": "/img/members/chiesa.png",
  "bio": "Scientific high school @ A. Pacinotti, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA",
  "categories": {
-  "main": "pwn"
+  "main": "trainer",
+  "secondary": ["pwn"]
  },
  "social": [
   {
