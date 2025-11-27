@@ -17,6 +17,11 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Limit the action to Srdnlen members
+    if: >
+      github.event_name == 'push' ||
+      (github.event_name == 'pull_request' && 
+       contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.pull_request.author_association))
     name: Deploy
     steps:
       - uses: actions/checkout@v4

@@ -8,47 +8,48 @@
 colorScheme = "noir"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
+smartTOC = true
 
 enableSearch = true
 enableCodeCopy = true
 
 mainSections = ["posts"]
-# robots = ""
+robots = "all"
 
 [header]
-  layout = "basic" # valid options: basic, fixed
+  layout = "basic"
 
 [footer]
- # showMenu = true
+  showMenu = false
   showCopyright = true
   showThemeAttribution = true
   showAppearanceSwitcher = false
   showScrollToTop = true
 
 [homepage]
-  layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "/img/srdnlen-team-frontpage.jpg" # used in: hero, and card
+  layout = "background"
+  homepageImage = "/img/srdnlen-team-frontpage.jpg"
   showRecent = false
   showRecentItems = 5
   showMoreLink = false
   showMoreLinkDest = "/posts/"
   cardView = false
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  layoutBackgroundBlur = true
 
 [article]
   showDate = true
-  #showViews = true
-  #showLikes = true
+  showViews = false
+  showLikes = false
   showDateUpdated = false
   showAuthor = false
   showHero = true
-  heroStyle = "big" # valid options: basic, big, background
+  heroStyle = "big"
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
   # editURL = "https://github.com/srdnlen/srdnlen-website/"
-  editAppendPath = true
+  editAppendPath = false
   seriesOpened = false
   showHeadingAnchors = true
   showPagination = true
@@ -59,10 +60,12 @@ mainSections = ["posts"]
   showAuthorsBadges = true
   showWordCount = false
   showSummary = false
-  sharingLinks = [ "linkedin", "twitter", "instagram" ]
+  sharingLinks = [] # [ "linkedin", "twitter", "instagram" ]
 
 [list]
   showBreadcrumbs = false
+  showHero = true
+  heroStyle = "basic"
   showSummary = false
   showTableOfContents = true
   showCards = false

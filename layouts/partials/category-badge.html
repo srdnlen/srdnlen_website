@@ -1,35 +1,24 @@
 {{ $tag := . }}
 {{ $t := lower $tag }}
+
+{{ $badgeData := dict
+  "web"       (dict "class" "badge-web"       "icon" "web-icon.svg")
+  "crypto"    (dict "class" "badge-crypto"    "icon" "crypto-icon.svg")
+  "pwn"       (dict "class" "badge-pwn"       "icon" "pwn-icon.svg")
+  "rev"       (dict "class" "badge-rev"       "icon" "rev-icon.svg")
+  "forensics" (dict "class" "badge-forensics" "icon" "forensics-icon.svg")
+  "misc"      (dict "class" "badge-misc"      "icon" "misc-icon.svg")
+  "trainer"   (dict "class" "badge-trainer"   "icon" "trainer-icon.svg")
+  "captain"   (dict "class" "badge-captain"   "icon" "captain-icon.svg")
+  "professor" (dict "class" "badge-professor" "icon" "professor-icon.svg")
+}}
+
 {{ $badgeClass := "badge-default" }}
 {{ $badgeSymbol := "" }}
 
-{{ if eq $t "web" }}
-  {{ $badgeClass = "badge-web" }}
-  {{ $badgeSymbol = "web-icon.svg" }}
-{{ else if eq $t "crypto" }}
-  {{ $badgeClass = "badge-crypto" }}
-  {{ $badgeSymbol = "crypto-icon.svg" }}
-{{ else if eq $t "pwn" }}
-  {{ $badgeClass = "badge-pwn" }}
-  {{ $badgeSymbol = "pwn-icon.svg" }}
-{{ else if eq $t "rev" }}
-  {{ $badgeClass = "badge-rev" }}
-  {{ $badgeSymbol = "rev-icon.svg" }}
-{{ else if eq $t "forensics" }}
-  {{ $badgeClass = "badge-forensics" }}
-  {{ $badgeSymbol = "forensics-icon.svg" }}
-{{ else if eq $t "misc" }}
-  {{ $badgeClass = "badge-misc" }}
-  {{ $badgeSymbol = "misc-icon.svg" }}
-{{ else if eq $t "trainer" }}
-  {{ $badgeClass = "badge-trainer" }}
-  {{ $badgeSymbol = "trainer-icon.svg" }}
-{{ else if eq $t "captain" }}
-  {{ $badgeClass = "badge-captain" }}
-  {{ $badgeSymbol = "captain-icon.svg" }}
-{{ else if eq $t "professor" }}
-  {{ $badgeClass = "badge-professor" }}
-  {{ $badgeSymbol = "professor-icon.svg" }}
+{{ with index $badgeData $t }}
+  {{ $badgeClass = .class }}
+  {{ $badgeSymbol = .icon }}
 {{ end }}
 
 <span class="m-1 badge-custom align-middle {{ $badgeClass }}">

@@ -6,6 +6,9 @@ theme = "blowfish"
 baseURL = "https://srdnlen.it/"
 defaultContentLanguage = "en"
 
+buildDrafts = false
+buildFuture = false
+
 enableRobotsTXT = true
 summaryLength = 30
 

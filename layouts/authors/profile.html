@@ -1,25 +1,17 @@
 {{ define "main" }}
   {{ .Scratch.Set "scope" "term" }}
   
-  {{/* --- ROBUST ID CALCULATION --- */}}
   {{ $authorID := "" }}
-
-  {{/* 1. Try to get ID from Physical File (The _index.md folder name) */}}
   {{ if .File }}
     {{ $authorID = .File.Dir | path.Base }}
   {{ end }}
-
-  {{/* 2. If no file (Auto-generated page), try Taxonomy Term */}}
   {{ if and (not $authorID) .Data.Term }}
     {{ $authorID = .Data.Term }}
   {{ end }}
-
-  {{/* 3. Fallback: Use the page title slugified */}}
   {{ if not $authorID }}
     {{ $authorID = .Title | urlize }}
   {{ end }}
 
-  {{/* --- LOAD DATA --- */}}
   {{ $author := index site.Data.authors $authorID }}
   {{ $hasData := not (eq $author nil) }}
 
@@ -28,11 +20,9 @@
       {{ partial "breadcrumbs.html" . }}
     {{ end }}
 
-    {{/* CASE 1: We found Author Data (Render Profile) */}}
     {{ if $hasData }}
       <div class="flex flex-col items-center gap-4 mt-8 mb-8 text-center">
         
-        {{/* Image Logic: Handles both local resources and static paths */}}
         {{ if $author.image }}
           <div class="relative w-48 h-48 flex-shrink-0">
             {{ $imagePath := strings.TrimPrefix "/" $author.image }} 
@@ -84,7 +74,6 @@
         </div>
       </div>
 
-    {{/* CASE 2: No Author Data (e.g. Main /authors/ list page) */}}
     {{ else }}
       <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
       <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">

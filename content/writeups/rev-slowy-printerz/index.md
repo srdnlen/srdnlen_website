@@ -3,7 +3,10 @@ title: "Srdnlen CTF 2025 Finals - Slowy printerz"
 date: "2025-10-02"
 authors: ["doliv"]
 layout: "single"
-showAuthors: true
+category: ["pwn","rev"]
+showAuthor: false
+showBreadcrumbs: false
+showDate: false
 ---
 
 # slowy printerz
