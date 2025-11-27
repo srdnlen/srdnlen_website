@@ -3,7 +3,7 @@ languageName = "English"
 weight = 1
 title = "Srdnlen"
 contentDir = 'content'
-
+description = "Official Sardininan CTF team representing UniCa."
 
 [params]
   displayName = "EN"

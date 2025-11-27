@@ -14,6 +14,10 @@ In order to add a member, you can run the `add-author.py` script and follow the 
 4. Please note that members may have any number of secondary tag, but be modest :)
 5. Follow steps 4-6 of "Adding a post".
 
+> [!IMPORTANT]
+>
+> The members' informations are stored under the `data/authors` repository. If you need to make any changes, please edit this file. If you need to edit your image, you can edit the file under `assets/img/members`
+
 ## Adding a post
 
 There are mainly two different type of posts:

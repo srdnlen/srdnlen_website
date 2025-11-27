@@ -10,6 +10,8 @@ defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 smartTOC = true
 
+defaultSocialImage = "/img/srdnlen-team-frontpage.jpg"
+
 enableSearch = true
 enableCodeCopy = true
 
