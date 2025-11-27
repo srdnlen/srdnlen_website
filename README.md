@@ -1,6 +1,6 @@
 # srdnlen.it
 
-![](homepage.png)
+![](readme/homepage.png)
 
 This is the code for the official website of Srdnlen.
 
