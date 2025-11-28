@@ -1,0 +1,14 @@
+{
+ "name": "Christian Scano @DarkKnight",
+ "image": "/img/members/scano.png",
+ "bio": "National PhD Student in Artificial Intelligence @ Roma \"La Sapienza\"",
+ "categories": {
+  "main": "trainer",
+  "secondary": ["web"]
+ },
+ "social": [
+  {
+   "linkedin": "https://www.linkedin.com/in/christian-scano-4a8753217"
+  }
+ ]
+}

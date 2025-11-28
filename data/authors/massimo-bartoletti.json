@@ -1,0 +1,13 @@
+{
+ "name": "Massimo Bartoletti",
+ "image": "/img/members/bartoletti.jpg",
+ "bio": "Associate Professor @ Department of Mathematics and Computer Science, UniCa, Italy. Founder of \"Blockchain@Unica\" laboratory. Director of a node of the Cyber Security National Lab for UniCa. Core member of the CINI working group on Blockchain.",
+ "categories": {
+  "main": "professor"
+ },
+ "social": [
+  {
+   "linkedin": "https://blockchain.unica.it/"
+  }
+ ]
+}

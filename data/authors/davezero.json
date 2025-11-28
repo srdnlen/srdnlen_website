@@ -1,0 +1,14 @@
+{
+ "name": "Davide Maiorca @davezero",
+ "image": "/img/members/maiorca.png",
+ "bio": "Associate Professor @ UniCA",
+ "categories": {
+  "main": "captain",
+  "secondary": ["trainer","pwn"]
+ },
+ "social": [
+  {
+   "linkedin": ""
+  }
+ ]
+}

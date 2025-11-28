@@ -10,6 +10,10 @@ on:
   # Allow manual deploys via the GitHub Actions Web UI.
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,6 +23,7 @@ jobs:
         with:
           # Fetch all history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
+          submodules: recursive
 
       - name: Cache Hugo resources
         uses: actions/cache@v3
@@ -79,10 +84,9 @@ jobs:
       - name: Comment on PR
         uses: thollander/actions-comment-pull-request@v3
         if: github.event_name == 'pull_request'
-        # Update 'your-project-name' below
         with:
           message: |
-            ## Deployed your-project-name with Cloudflare Pages
+            ## Deployed srdnlen-website with Cloudflare Pages
 
             | **Latest commit:** | `${{ steps.short-sha.outputs.short_sha }}` |
             |:-|:-|

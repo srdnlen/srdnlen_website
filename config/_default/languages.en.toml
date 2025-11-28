@@ -1,0 +1,25 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Srdnlen"
+contentDir = 'content'
+description = "Official Sardininan CTF team representing UniCa."
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  logo = "img/logo.png"
+  description = "UniCA CTF team - Sardinia Len APS"
+  dateFormat = "2 January 2006"
+
+[params.author]
+  name = "Srdnlen"
+  image = "img/logo.png"
+  headline = "UniCA CTF team - Sardinia Len APS"
+   links = [
+     { github = "https://github.com/srdnlen" },
+     { instagram = "https://instagram.com/srdnlen" },
+     { linkedin = "https://it.linkedin.com/company/sardinia-len" },
+     { email = "mailto:srdnlen@gmail.com" }
+   ]

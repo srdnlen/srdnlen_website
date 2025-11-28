@@ -1,0 +1,102 @@
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customise the display of your website.
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://nunocoracao.github.io/blowfish/docs/configuration/#theme-parameters
+
+colorScheme = "noir"
+defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = false
+smartTOC = true
+
+defaultSocialImage = "/img/srdnlen-team-frontpage.jpg"
+
+enableSearch = true
+enableCodeCopy = true
+
+mainSections = ["posts"]
+robots = "all"
+
+[header]
+  layout = "basic"
+
+[footer]
+  showMenu = false
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = false
+  showScrollToTop = true
+
+[homepage]
+  layout = "background"
+  homepageImage = "/img/srdnlen-team-frontpage.jpg"
+  showRecent = false
+  showRecentItems = 5
+  showMoreLink = false
+  showMoreLinkDest = "/posts/"
+  cardView = false
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = true
+
+[article]
+  showDate = true
+  showViews = false
+  showLikes = false
+  showDateUpdated = false
+  showAuthor = false
+  showHero = true
+  heroStyle = "big"
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false
+  # editURL = "https://github.com/srdnlen/srdnlen-website/"
+  editAppendPath = false
+  seriesOpened = false
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = false
+  showTableOfContents = true
+  showTaxonomies = false 
+  showAuthorsBadges = true
+  showWordCount = false
+  showSummary = false
+  sharingLinks = [] # [ "linkedin", "twitter", "instagram" ]
+
+[list]
+  showBreadcrumbs = false
+  showHero = true
+  heroStyle = "basic"
+  showSummary = false
+  showTableOfContents = true
+  showCards = false
+  groupByYear = true
+  cardView = true
+  cardViewScreenWidth = false
+  constrainItemsWidth = true
+
+[sitemap]
+  excludedKinds = []
+
+[taxonomy]
+  showTermCount = true
+
+[firebase]
+  # apiKey = "XXXXXX"
+  # authDomain = "XXXXXX"
+  # projectId = "XXXXXX"
+  # storageBucket = "XXXXXX"
+  # messagingSenderId = "XXXXXX"
+  # appId = "XXXXXX"
+  # measurementId = "XXXXXX"
+
+[fathomAnalytics]
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
+
+[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""

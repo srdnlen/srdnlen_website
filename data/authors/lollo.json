@@ -1,0 +1,14 @@
+{
+ "name": "Lorenzo Siriu @Lollo",
+ "image": "/img/members/siriu.png",
+ "bio": "Master's student in Mathematics curriculum Cryptography @ UniTrento, Bachelor's degree in Computer Science @ UniCA, Team Italy 2024",
+ "categories": {
+  "main": "trainer",
+  "secondary": ["crypto"]
+ },
+ "social": [
+  {
+   "linkedin": "https://www.linkedin.com/in/lorenzo-siriu/"
+  }
+ ]
+}

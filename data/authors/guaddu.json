@@ -1,0 +1,14 @@
+{
+ "name": "Davide Sechi @guaddu",
+ "image": "/img/members/sechi.png",
+ "bio": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA",
+ "categories": {
+  "main": "trainer",
+  "secondary": ["crypto"]
+ },
+ "social": [
+  {
+   "linkedin": "https://www.linkedin.com/in/lorenzo-siriu/"
+  }
+ ]
+}

@@ -1,0 +1,360 @@
+{
+    "Crypto":[
+        {
+            "Name":"Lorenzo Siriu",
+            "Nick": "Lollo", 
+            "role": "Captain Team Crypto", 
+            "position": "Master's student in Mathematics curriculum Cryptography @ UniTrento, Bachelor's degree in Computer Science @ UniCA, Team Italy 2024", 
+            "avatar": "siriu.png",
+            "link": "https://www.linkedin.com/in/lorenzo-siriu/"
+        },
+        {
+            "Name":"Giovanni Manca",
+            "Nick": "zaua", 
+            "role": "", 
+            "position": "Cyber Security engineer. Rev enjoyer. Good at guessing. ", 
+            "avatar": "default.jpg",
+            "link": "https://www.linkedin.com/in/lorenzo-siriu/"
+        },
+        {
+            "Name":"Davide Sechi",
+            "Nick": "guaddu", 
+            "role": "", 
+            "position": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
+            "avatar": "sechi.png",
+            "link": "https://www.linkedin.com/in/lorenzo-siriu/"
+        },
+        {
+            "Name":"Riccardo Era",
+            "Nick": "richwas", 
+            "role": "", 
+            "position": "Computer Science high school @ IIS Aproni-Fermi, Oristano. Ongoing bachelor degree in Computer Science and Data Analytics @ UniCA", 
+            "avatar": "era.jpeg",
+            "link": "https://www.linkedin.com/in/riccardo-era/"
+        },
+        {
+            "Name":"Nicola Ghisu",
+            "Nick": "NicoXVI", 
+            "role": "", 
+            "position": "Ongoing Computer Science high school @ ITIS OTHOCA, Oristano.", 
+            "avatar": "ghisu.jpeg",
+            "link": ""
+        }
+    ],
+    "Foren/Misc":[
+        {
+            "Name":"Silvia Lucia Sanna",
+            "Nick": "slsanna", 
+            "role": "Captain Team Foren", 
+            "position": "National PhD Student in \"AI for Security and CyberSecurity\" focused on mobile threat detection and Digital Forensics consultant. Part of srdnlen since 2020 in forensics category. Top women player in openECSC 2022 and selected for women bootcamp by ENISA. Women4Cyber Youth Ambassador in 2023", 
+            "avatar": "silvialsanna.png",
+            "link": "https://www.linkedin.com/in/silvia-lucia-sanna-894353151/"
+        },
+        {
+            "Name":"Luca Vitaliano",
+            "Nick": "vita", 
+            "role": "", 
+            "position": "Technical diploma in Computer Science @ ITIS Michele Giua. Ongoing Bachelor degree in Computer Engineering @ UniCA.", 
+            "avatar": "damiano.jpg",
+            "link": "https://www.linkedin.com/in/luca-vitaliano-damiano-8a0274153/"
+        },
+        {
+            "Name":"Francesco Rocchiccioli",
+            "Nick": "TistaMilani", 
+            "role": "", 
+            "position": "Technical diploma in Computer Science @ ITIS Othoca. Ongoing Bachelor degree in Computer Science @ UniCA.", 
+            "avatar": "rochiccioli.jpg",
+            "link": "https://it.linkedin.com/in/francesco-rocchiccioli-641381250"
+        },
+        {
+            "Name":"Simone Cocco",
+            "Nick": "d1dpvl", 
+            "role": "", 
+            "position": "Technical diploma @ ITIS G. Marconi Cagliari. Ongoing Bachelor degree in Applied Science & Data Analytics @ UniCA. Currently learning hardware security", 
+            "avatar": "cocco.JPG",
+            "link": "https://www.linkedin.com/in/silvia-lucia-sanna-894353151/"
+        },
+        {
+            "Name":"Alessandro Melis",
+            "Nick": "cvrlx", 
+            "role": "", 
+            "position": "PhD in Computer Science @ UniCA", 
+            "avatar": "melis.jpeg",
+            "link": ""
+        },
+        {
+            "Name":"Nicholas Meli",
+            "Nick": "unickz", 
+            "role": "", 
+            "position": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
+            "avatar": "meli.png",
+            "link": "https://unickz.dev"
+        },
+        {
+            "Name":"Nicola Deidda",
+            "Nick": "MrDeiv", 
+            "role": "", 
+            "position": "PhD Student in Cybersecurity @ UniCA, IMT Lucca", 
+            "avatar": "deidda.png",
+            "link": "https://www.linkedin.com/in/nicola-deidda-543a8b180/"
+        },
+        {
+            "Name":"Alessio Sechi",
+            "Nick": "doku", 
+            "role": "", 
+            "position": "Data Science undergraduate with a strong interest in AI, cybersecurity, and the social sciences. ", 
+            "avatar": "sechiA.jpeg",
+            "link": ""
+        },
+        {
+            "Name":"Alberto Olla",
+            "Nick": "khibus", 
+            "role": "", 
+            "position": "Bacherlor's degree in Computer Science and Ongoing Masters' degree in Computer Science @ UniCA.", 
+            "avatar": "olla.jpg",
+            "link": "www.linkedin.com/in/alberto-olla-375a46321"
+        },
+        {
+            "Name":"Irene Pranteddu",
+            "Nick": "irina", 
+            "role": "", 
+            "position": "Technical diploma @ IIS. Asproni-Fermi Iglesias. Ongoing bachelor degree in Computer Engineering @ UniCA", 
+            "avatar": "pranteddu.jpg",
+            "link": ""
+        },
+        {
+            "Name":"Alessandro Marmillata",
+            "Nick": "milka-cookies", 
+            "role": "", 
+            "position": "Cyber Security Analyst and Telecommunication Engineering Student @ UniCA", 
+            "avatar": "marmillata.jpeg",
+            "link": "https://www.linkedin.com/in/alessandromarmillata/"
+        },
+        {
+            "Name":"Mirko Angius",
+            "nick": "inn3r", 
+            "role": "", 
+            "position": "technical diploma in computer science @ itis othoca, oristano. ongoing bachelor degree in computer science @ unica.", 
+            "avatar": "angius.png",
+            "link": "https://linkedin.com/in/mirko-angius"
+        },
+	{
+            "Name":"Salvatore Castello",
+            "nick": "SalvaCà",
+            "role": "",
+            "position": "Master's Degree in Cybersecurity @ UniCA",
+            "avatar": "castello.jpg",
+            "link": "https://www.linkedin.com/in/salvatore-a-castello/"
+        }
+    ],
+    "Web":[
+        {
+            "Name":"Lorenzo Pisu",
+            "Nick": "pysu", 
+            "role": "Captain Team Web", 
+            "position": "PhD Student in Computer Engineering @ UniCA", 
+            "avatar": "pisu.png",
+            "link": "https://www.linkedin.com/in/lorenzo-pisu-68a983226/"
+        },
+        {
+            "Name":"Alessandro Frau",
+            "Nick": "takenx10", 
+            "role": "", 
+            "position": "Software Developer and Cybersecurity Engineer @ Digital Defense", 
+            "avatar": "frau.png",
+            "link": "https://www.linkedin.com/in/alessandro-frau-takenx10/"
+        },
+        {
+            "Name":"Federico Loi",
+            "Nick": "octaviusss", 
+            "role": "", 
+            "position": "Security Engineer @ AWS. Master's Degree in Cybersecurity @ UniCA", 
+            "avatar": "loi.png",
+            "link": "https://www.linkedin.com/in/federico-loi/"
+        },
+        {
+            "Name":"Bruno Pala",
+            "Nick": "gheddus", 
+            "role": "", 
+            "position": "Bachelor degree in Computer Engineering at UniCA. Master's degree in Computer Engineering, Cybersecurity and Artificial Intelligence @ UniCA. Software Security Consultant @ IMQ Minded Security, Milan", 
+            "avatar": "pala.png",
+            "link": "https://www.linkedin.com/in/federico-loi/"
+        },
+        {
+            "Name":"Matteo Sanna",
+            "Nick": "sanmatte", 
+            "role": "", 
+            "position": "Ongoing bachelor's degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "default.jpg",
+            "link": "https://www.linkedin.com/in/matteo-sanna-19b805249"
+        },
+        {
+            "Name":"Diego Soi",
+            "Nick": "diesoi", 
+            "role": "", 
+            "position": "PhD Student in Computer Engineering @ UniCA", 
+            "avatar": "diesoi.png",
+            "link": "https://it.linkedin.com/in/diego-soi-67a564216"
+        },
+        {
+            "Name":"Christian Scano",
+            "Nick": "DarkKnight", 
+            "role": "", 
+            "position": "National PhD Student in Artificial Intelligence @ Roma \"La Sapienza\"", 
+            "avatar": "scano.png",
+            "link": "https://www.linkedin.com/in/christian-scano-4a8753217"
+        },
+        {
+            "Name":"Lorenzo Corrias",
+            "Nick": "justlel", 
+            "role": "", 
+            "position": "Computer Science student @ UniCA. Junior CyberSecurity for Pluribus One.", 
+            "avatar": "corrias.png",
+            "link": "https://justlel.me"
+        },
+        {
+            "Name":"Michele Fiori",
+            "Nick": "", 
+            "role": "", 
+            "position": "High School @ ITI G.M. Angioy. Ongoing Bachelor's degree in Computer Science @ UniCA. Current Work as Software Engineer", 
+            "avatar": "fiori.png",
+            "link": "https://www.linkedin.com/in/michele-fiori03/"
+        },
+        {
+            "Name":"Francesco Meola",
+            "Nick": "frank21", 
+            "role": "", 
+            "position": "High School @ ITI Michele Giua. Ongoing Bachelor's degree in Computer Science @ UniCA.", 
+            "avatar": "default.jpg",
+            "link": ""
+        }
+    ],
+    "Rev":[
+        {
+            "Name":"Sofia Tocco",
+            "Nick": "tosofia", 
+            "role": "Captain Team Rev", 
+            "position": "Computer Science high school @ IIS. Othoca, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
+            "avatar": "tocco.jpg",
+            "link": ""
+        },
+        {
+            "Name":"Simone Sulis",
+            "Nick": "Salsa", 
+            "role": "", 
+            "position": "Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "sulis.jpg",
+            "link": ""
+        },
+        {
+            "Name":"Massimo Sanna",
+            "Nick": "SannaZ", 
+            "role": "", 
+            "position": "Computer Science high school @ IIS. Dionigi Scano, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "sannaZ.png",
+            "link": "https://www.linkedin.com/in/massimo-sanna"
+        },
+        {
+            "Name":"Daniele Orrù",
+            "Nick": "Den1211", 
+            "role": "", 
+            "position": "Computer Science high school @ IIS. Fermi, Carbonia. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "orru.jpg",
+            "link": ""
+        },
+        {
+            "Name":"Tommaso Casti",
+            "Nick": "T0mm1", 
+            "role": "", 
+            "position": "High School Scientific @ Euclide. Ongoing Bachelor's degree in Computer Engineering @ UniCA", 
+            "avatar": "casti.jpg",
+            "link": "https://www.linkedin.com/in/tommaso-casti-17b71a2a8"
+        }
+    ],
+    "Pwn":[
+        {
+            "Name":"Davide Maiorca",
+            "Nick": "davezero", 
+            "role": "Captain Team Pwn", 
+            "position": "Associate Professor @ UniCA", 
+            "avatar": "maiorca.png",
+            "link": ""
+        },
+        {
+            "Name":"Emanuele Massidda",
+            "Nick": "manu_massi", 
+            "role": "", 
+            "position": "PhD Student in Cybersecurity @ UniCa. Master's Degree in Computer Engineering, Cybersecurity and Artificial Intelligence @ UniCA", 
+            "avatar": "massidda.png",
+            "link": "https://www.linkedin.com/in/emmanuele-massidda-6b299920b/"
+        },
+        {
+            "Name":"Diego Oliva",
+            "Nick": "doliv", 
+            "role": "", 
+            "position": "Computer Science high school @ ITIS OTHOCA, Oristano. Ongoing bachelor degree in Computer Science @ UniCA", 
+            "avatar": "oliva.png",
+            "link": "https://doliv.cc"
+        },
+        {
+            "Name":"Matteo Chiesa",
+            "Nick": "church", 
+            "role": "", 
+            "position": "Scientific high school @ A. Pacinotti, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA", 
+            "avatar": "chiesa.png",
+            "link": "https://github.com/Church-17"
+        },
+        {
+            "Name":"Roberto Antonio Usai",
+            "Nick": "TheRoberto2512", 
+            "role": "", 
+            "position": "Computer Science high school @ ITIS Michele Giua, Cagliari. Ongoing Bachelor's degree in Applied Computer Science and Data Analytics @ UniCA", 
+            "avatar": "usai.jpg",
+            "link": "http://www.linkedin.com/in/roberto-antonio-usai"
+        },
+        {
+            "Name":"Filippo Zuddas",
+            "Nick": "filaj", 
+            "role": "", 
+            "position": "Ongoing bachelor degree in Computer Science and Data Analytics @ UniCA", 
+            "avatar": "default.jpg",
+            "link": ""
+        }
+    ],
+    "Ex players - Associates":[
+        {
+            "Name": "Giorgio Giacinto",
+            "Nick": "",
+            "role": "",
+            "position": "Full Professor @ Dept. Electrical and Electronical Engineering, UniCA, Italy",
+            "avatar": "default.jpg",
+            "link": ""
+        },
+        {  
+            "Name":"Massimo Bartoletti",
+            "Nick": "", 
+            "role": "", 
+            "position": "Massimo Bartoletti is Associate Professor at the Department of Mathematics and Computer Science of the University of Cagliari. His research activity concerns the development of tools and techniques for the specification, analysis and verification of software, with a special emphasis on security. Massimo Bartoletti is founder of the laboratory \"Blockchain@Unica\",  one of the largest academic research group on blockchain technologies in Italy, director of a node of the Cyber Security National Lab for the University of Cagliari, and core member of the CINI working group on Blockchain.", 
+            "avatar": "bartoletti.jpg",
+            "link": "https://blockchain.unica.it/"
+        },
+        {
+            "Name":"Livio Pompianu",
+            "Nick": "", 
+            "role": "", 
+            "position": "Assistant Professor of Computer Science @ UniCA, Italy", 
+            "avatar": "pompianu.png",
+            "link": "https://aibd.unica.it/people/livio-pompianu"
+        },
+        {  
+            "Name":"Marco Martalò",
+            "Nick": "", 
+            "role": "", 
+            "position": "PhD in Information Technology @ University of Parma in 2009. Associate Professor @ Dept. of Electrical and Electronical Engineering, UniCA, Italy", 
+            "avatar": "martalo.png",
+            "link": "https://www.linkedin.com/in/marco-martalo/"
+        }
+]   
+
+
+}

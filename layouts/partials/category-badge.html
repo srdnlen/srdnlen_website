@@ -1,0 +1,32 @@
+{{ $tag := . }}
+{{ $t := lower $tag }}
+
+{{ $badgeData := dict
+  "web"       (dict "class" "badge-web"       "icon" "web-icon.svg")
+  "crypto"    (dict "class" "badge-crypto"    "icon" "crypto-icon.svg")
+  "pwn"       (dict "class" "badge-pwn"       "icon" "pwn-icon.svg")
+  "rev"       (dict "class" "badge-rev"       "icon" "rev-icon.svg")
+  "forensics" (dict "class" "badge-forensics" "icon" "forensics-icon.svg")
+  "misc"      (dict "class" "badge-misc"      "icon" "misc-icon.svg")
+  "trainer"   (dict "class" "badge-trainer"   "icon" "trainer-icon.svg")
+  "captain"   (dict "class" "badge-captain"   "icon" "captain-icon.svg")
+  "professor" (dict "class" "badge-professor" "icon" "professor-icon.svg")
+}}
+
+{{ $badgeClass := "badge-default" }}
+{{ $badgeSymbol := "" }}
+
+{{ with index $badgeData $t }}
+  {{ $badgeClass = .class }}
+  {{ $badgeSymbol = .icon }}
+{{ end }}
+
+<span class="m-1 badge-custom align-middle {{ $badgeClass }}">
+  {{ if ne $badgeSymbol "" }}
+    {{ $res := resources.Get (printf "icons/%s" $badgeSymbol) }}
+    {{ if $res }}
+      {{ $res.Content | safeHTML }}
+    {{ end }}
+  {{ end }}
+  {{ title $tag }}
+</span>

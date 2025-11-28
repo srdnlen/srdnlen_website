@@ -1,0 +1,16 @@
+{
+ "name": "Nicola Deidda @MrDeiv",
+ "image": "/img/members/deidda.png",
+ "bio": "PhD Student in Cybersecurity @ UniCA, IMT Lucca",
+ "categories": {
+  "main": "trainer",
+  "secondary": [
+   "forensics"
+  ]
+ },
+ "social": [
+  {
+   "linkedin": "https://www.linkedin.com/in/nicola-deidda-543a8b180/"
+  }
+ ]
+}

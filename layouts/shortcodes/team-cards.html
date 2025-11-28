@@ -1,0 +1,83 @@
+{{ $allCats := slice }}
+{{ range site.Data.authors }}
+  {{ if .categories.main }}
+    {{ $allCats = $allCats | append .categories.main }}
+  {{ end }}
+{{ end }}
+{{ $rawCats := $allCats | uniq | sort }}
+
+{{ $priorityList := slice "captain" "trainer" "professor" }}
+{{ $categories := slice }}
+{{ range $priorityList }}
+  {{ if in $rawCats . }}
+    {{ $categories = $categories | append . }}
+  {{ end }}
+{{ end }}
+{{ range $rawCats }}
+  {{ if not (in $priorityList .) }}
+    {{ $categories = $categories | append . }}
+  {{ end }}
+{{ end }}
+
+
+{{ range $category := $categories }}
+
+  <div class="mb-12">
+      <div class="flex content-center items-center gap-4 mb-8">
+      {{ partial "category-badge.html" $category }}
+      <div class="h-0.5 flex-grow rounded-full bg-gradient-to-r from-primary-500/50 to-transparent"></div>
+      </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; width: 100%;">
+
+      {{ range $slug, $author := site.Data.authors }}
+        {{ if and .categories (eq .categories.main $category) }}
+
+          {{ $imagePath := strings.TrimPrefix "/" .image }} 
+          {{ $imageResource := resources.Get $imagePath }}
+          {{ $imgSrc := "" }}
+          {{ if $imageResource }} {{ $imgSrc = $imageResource.RelPermalink }} {{ else }} {{ $imgSrc = .image }} {{ end }}
+
+          {{ $authorPage := site.GetPage (printf "/authors/%s" $slug) }}
+          {{ $link := "" }}
+          {{ if $authorPage }} {{ $link = $authorPage.RelPermalink }} {{ end }}
+
+          {{ if not (eq $link "") }}<a href="{{ $link }}" class="block h-full">{{ end }}
+            
+            <div class="bg-white dark:bg-neutral-700 backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 rounded-lg shadow-sm p-6 flex flex-col justify-between h-full transition-transform hover:scale-[1.02]">
+            
+              <div class="flex flex-col items-center text-center w-full">
+                
+                <div class="flex-shrink-0 mb-8" style="width: 170px; height: 170px;">
+                  <img src="{{ $imgSrc }}" 
+                      alt="{{ .name }}"
+                      class="rounded-full border border-neutral-200 dark:border-neutral-600"
+                      style="width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 1 / 1;">
+                </div>
+
+                <h3 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 m-0">
+                  {{ .name }}
+                </h3>
+
+                <p class="text-neutral-600 dark:text-neutral-300 text-sm leading-snug pt-2">
+                  {{ .bio | truncate 100 }}
+                </p>
+              </div>
+
+              <div class="w-full flex justify-center mt-4">
+                {{ if .categories.secondary }}
+                  <div class="flex flex-wrap justify-center gap-2">
+                    {{ range .categories.secondary }}
+                      {{ partial "category-badge.html" . }}
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+
+            </div>
+          {{ if not (eq $link "") }}</a>{{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

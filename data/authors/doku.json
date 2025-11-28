@@ -1,0 +1,16 @@
+{
+ "name": "Alessio Sechi @doku",
+ "image": "/img/members/sechiA.jpeg",
+ "bio": "Data Science undergraduate with a strong interest in AI, cybersecurity, and the social sciences. ",
+ "categories": {
+  "main": "forensics",
+  "secondary": [
+   "misc"
+  ]
+ },
+ "social": [
+  {
+   "linkedin": ""
+  }
+ ]
+}

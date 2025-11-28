@@ -1,0 +1,13 @@
+{
+ "name": "Emanuele Massidda @manu_massi",
+ "image": "/img/members/massidda.png",
+ "bio": "PhD Student in Cybersecurity @ UniCa. Master's Degree in Computer Engineering, Cybersecurity and Artificial Intelligence @ UniCA",
+ "categories": {
+  "main": "pwn"
+ },
+ "social": [
+  {
+   "linkedin": "https://www.linkedin.com/in/emmanuele-massidda-6b299920b/"
+  }
+ ]
+}
