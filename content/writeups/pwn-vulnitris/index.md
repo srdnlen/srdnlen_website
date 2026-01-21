@@ -1,3 +1,14 @@
+---
+title: "Srdnlen CTF 2025 Finals - Vulnitris"
+date: "2025-10-11"
+authors: ["church", "davezero"]
+layout: "single"
+category: ["pwn"]
+showAuthor: false
+showBreadcrumbs: false
+showDate: false
+---
+
 # Vulnitris
 
 **CTF:** Srdnlen CTF 2025 Finals\
