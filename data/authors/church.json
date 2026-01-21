@@ -1,14 +1,14 @@
 {
  "name": "Matteo Chiesa @church",
  "image": "/img/members/chiesa.png",
- "bio": "Scientific high school @ A. Pacinotti, Cagliari. Ongoing bachelor degree in Applied Science & Data Analytics @ UniCA",
+ "bio": "Scientific high school @ A. Pacinotti, Cagliari. Bachelor degree in Applied Computer Science & Data Analytics @ UniCA. Ongoing master degree in Computer Engineering, Cybersecurity and Artificial Intelligence @ UniCA.",
  "categories": {
   "main": "trainer",
   "secondary": ["pwn"]
  },
  "social": [
   {
-   "linkedin": "https://github.com/Church-17"
+   "linkedin": "https://www.linkedin.com/in/matteo-chiesa-5609a4385/"
   }
  ]
 }
