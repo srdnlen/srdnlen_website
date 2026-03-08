@@ -110,7 +110,7 @@ At this rate in fact, 2 things are happening:
 ### Sloppable as metric
 When massive use of this tools is made, players lose the interest to understand
 the problem, and just try to find the best prompt to find the flag. They stop
-caring about the problem itself.
+caring about the challenge itself.
 
 Here the new metric to classify a good or bad challenge isn't learning or
 difficulty anymore, but **sloppability**.
