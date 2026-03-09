@@ -1,6 +1,6 @@
 ---
 title: "SloppApocalypse: dealing with generated thoughts during our CTF event"
-subtitle: "poba"
+subtitle: "Dealing with generates thoughts during our CTF event"
 date: 2026-03-04T15:45:08+01:00
 summary: "The problem of AI in Capture the Flag and hacking competitions" # for open graph optimization in link previews
 description: "The problem of AI in Capture the Flag and hacking competitions" # can be the same as the summary
