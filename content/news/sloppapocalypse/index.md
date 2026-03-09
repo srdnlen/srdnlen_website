@@ -2,9 +2,8 @@
 title: "SloppApocalypse: dealing with generated thoughts during our CTF event"
 subtitle: "poba"
 date: 2026-03-04T15:45:08+01:00
-authors: ["sanmatte"]
-summary: "" # for open graph optimization in link previews
-description: "" # can be the same as the summary
+summary: "The problem of AI in Capture the Flag and hacking competitions" # for open graph optimization in link previews
+description: "The problem of AI in Capture the Flag and hacking competitions" # can be the same as the summary
 tags: ["writeup"]
 category: ["ctf"]
 layout: "single"
@@ -99,7 +98,7 @@ prooved enough, massive use of AI during the event.
 
 ---
 
-## Conclusions
+## Our considerations
 Again, it is very important to remember that slopping was not forbidden, but...
 
 We wanted to share this data to make the community aware of this fenomenon, and
@@ -139,7 +138,7 @@ to improve their models?
 
 ---
 
-## Very real very final conclusion
+## Conclusions
 In the next months, for sure, something will change. Some teams will choose to
 not compete and prioritize the learning, while some others will go for the
 opposite. 
