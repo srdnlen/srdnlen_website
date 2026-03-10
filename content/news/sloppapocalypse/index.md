@@ -161,5 +161,5 @@ While we believe a new concept of CTFs should be studied and developed, we'll wo
 Thank you for reading, with love, 
 <br>Srdnlen <3
 
-![Discord screenshot](screenshot.png "Final message and reflection from our team
-learder")
+![Discord screenshot](screenshot.png "Viral message of our team
+leader")
