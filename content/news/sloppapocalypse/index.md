@@ -56,7 +56,7 @@ challenges was lower and the number of solves way higher.
 
 And we kind of expected that. But again there was still something more going on.
 
-This impression was confirmed by amount of nosense tickets we got.
+This impression was confirmed by the amount of nosense tickets we got.
 
 Out of around 230 tickets, 186 of them were about the challenges, and out of
 those, we identified 39 of them with visible proof of moderate to full slopping, 
