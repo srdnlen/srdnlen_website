@@ -101,7 +101,7 @@ prooved enough, massive use of AI during the event.
 ## Our considerations
 Again, it is very important to remember that slopping was not forbidden, but...
 
-We wanted to share this data to make the community aware of this fenomenon, and
+We wanted to share this data to make the community aware of this phenomenon, and
 stimulate a discussion on how, or if, to deal with it.
 
 At this rate in fact, 2 things are happening:
