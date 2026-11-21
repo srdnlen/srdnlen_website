@@ -1,0 +1,38 @@
+{{ $cardClasses := "flex flex-col md:flex-row relative" }}
+{{ $imgWrapperClasses := "" }}
+{{ $cardContentClasses := "" }}
+
+{{ $page := .Page }}
+{{ $featured := "" }}
+
+<article class="{{ $cardClasses }}">
+  <div class="{{ $cardContentClasses }}">
+    <header class="items-center text-start text-xl font-semibold">
+      <a
+        {{ with $page.Params.externalUrl }}
+          href="{{ . }}" target="_blank" rel="external"
+        {{ else }}
+          href="{{ $page.RelPermalink }}"
+        {{ end }}
+        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
+        <h4 class="text-base lg:text-lg">
+          {{ .Title | emojify }}
+          {{ if .Params.externalUrl }}
+            <span class="cursor-default align-top text-xs text-neutral-400 dark:text-neutral-500">
+              <span class="rtl:hidden">&#8599;</span>
+              <span class="ltr:hidden">&#8598;</span>
+            </span>
+          {{ end }}
+        </h4>
+      </a>
+      {{ if and .Draft .Site.Params.article.showDraftLabel }}
+        <div class="ms-2">{{ partial "badge.html" (i18n "article.draft" | emojify) }}</div>
+      {{ end }}
+
+    </header>
+    <div class="text-xs lg:text-sm text-neutral-500 dark:text-neutral-400">
+      {{ partial "article-meta/basic.html" . }}
+    </div>
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</article>

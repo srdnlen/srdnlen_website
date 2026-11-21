@@ -29,15 +29,12 @@ robots = "all"
   showScrollToTop = true
 
 [homepage]
-  layout = "background"
+  layout = "custom"
   homepageImage = "/img/srdnlen-team-frontpage.jpg"
-  showRecent = false
-  showRecentItems = 5
-  showMoreLink = false
-  showMoreLinkDest = "/posts/"
-  cardView = false
-  cardViewScreenWidth = false
   layoutBackgroundBlur = true
+  showRecent = false
+  showRecentItems = 2
+  showRecentSections = ["news", "writeups"]
 
 [article]
   showDate = true
