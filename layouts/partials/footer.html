@@ -33,7 +33,7 @@
       </nav>
     {{ end }}
   {{ end }}
-  <div class="flex items-center justify-between">
+  <div class="flex items-center justify-between flex-row max-sm:flex-col">
     {{/* Copyright */}}
     {{ if .Site.Params.footer.showCopyright | default true }}
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -60,8 +60,9 @@
 
       <div class="flex items-center gap-3 ">
           {{ partial "icon.html" "envelope" }}
-        <div class="flex gap-1 flex-col sm:flex-row sm:gap-2">
+        <div class="flex gap-1 flex-row sm:gap-2">
           <a href="mailto:srdnlen@gmail.com" class="hover:underline hover:decoration-primary-500">srdnlen@gmail.com</a>
+          <span>•</span>
           <a href="mailto:srdnlen@pec.it" class="hover:underline hover:decoration-primary-500">srdnlen@pec.it</a>
         </div>
       </div>
