@@ -1,3 +1,11 @@
+/* View transitions */
+@media not (prefers-reduced-motion)  {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+/* Badges */
 .badge-custom { 
   display: inline-flex;
   padding: 4px 12px;
