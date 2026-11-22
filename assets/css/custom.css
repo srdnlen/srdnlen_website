@@ -1,3 +1,12 @@
+/* Signal support for color schemes */
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
 /* View transitions */
 @media not (prefers-reduced-motion)  {
   @view-transition {
