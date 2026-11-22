@@ -55,6 +55,13 @@ html.dark {
   }
 }
 
+/* Hide search button when javascript is disabled */
+@media (scripting: none) {
+  #search-button {
+    display: none;
+  }
+}
+
 /* Badges */
 .badge-custom { 
   display: inline-flex;
