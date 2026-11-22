@@ -32,9 +32,11 @@ robots = "all"
   layout = "custom"
   homepageImage = "/img/srdnlen-team-frontpage.jpg"
   layoutBackgroundBlur = true
-  showRecent = false
+  showRecent = false # we ignore this, but if it stays enabled the theme tries to render useless stuff
   showRecentItems = 2
   showRecentSections = ["news", "writeups"]
+  showNotices = true
+  showNoticesHideWithJs = true
 
 [article]
   showDate = true

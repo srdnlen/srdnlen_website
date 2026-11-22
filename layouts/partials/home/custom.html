@@ -48,6 +48,25 @@
               class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-neutral-100 opacity-60 mix-blend-normal dark:from-neutral-800 dark:to-neutral-800"></div>
           {{ end }}
         </div>
+        {{/* Notices on the site */}}
+        {{ if .Site.Params.homepage.showNotices | default false }}
+        <section id="notices" class="flex flex-col gap-1">
+          {{ if .Site.Params.homepage.showNoticesHideWithJs | default false }}
+            {{ $hideExpired := resources.Get "js/hide-expired.js" }}
+            {{ $hideExpired = $hideExpired | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+            <script
+              type="text/javascript"
+              src="{{ $hideExpired.RelPermalink }}"
+              integrity="{{ $hideExpired.Data.Integrity }}">
+            </script>
+          {{ end }}
+          {{ with site.GetPage "/notices" }}
+            {{ range (where .Pages "Type" "notices").ByDate.Reverse }}
+              {{ partial "home/notice.html" . }}
+            {{ end }}
+          {{ end }}
+        </section>
+        {{ end }}
         {{/* Container with logo and socials */}}
         <div class="flex flex-col items-center justify-center px-1 py-1 transition-all lg:py-[10vh] text-center flex-auto">
           {{/* Use proper logo for homepage */}}
