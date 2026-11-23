@@ -5,7 +5,7 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "noir"
+colorScheme = "srdnlen"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 smartTOC = true
@@ -25,7 +25,7 @@ robots = "all"
   showMenu = false
   showCopyright = true
   showThemeAttribution = true
-  showAppearanceSwitcher = false
+  showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
