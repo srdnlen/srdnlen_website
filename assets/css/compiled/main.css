@@ -3203,9 +3203,6 @@
     transition-duration: 600ms;
   }
   @media (prefers-reduced-motion: reduce) {
-    .motion-reduce\:\!opacity-25 {
-      opacity: 25% !important;
-    }
     .motion-reduce\:transition-none {
       transition-property: none;
     }
@@ -3229,11 +3226,6 @@
     }
     .contrast-more\:opacity-100 {
       opacity: 100%;
-    }
-    .contrast-more\:backdrop-blur-none {
-      --tw-backdrop-blur:  ;
-      -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
-      backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
     }
   }
   @media (width < 640px) {
@@ -3619,6 +3611,12 @@
     background-color: color-mix(in srgb, rgba(rgba(var(--color-neutral-800), 1), 1) 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, rgba(var(--color-neutral-800), 1) 60%, transparent);
+    }
+  }
+  .dark\:bg-neutral-800\/75:is(.dark *) {
+    background-color: color-mix(in srgb, rgba(rgba(var(--color-neutral-800), 1), 1) 75%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, rgba(var(--color-neutral-800), 1) 75%, transparent);
     }
   }
   .dark\:bg-neutral-800\/85:is(.dark *) {

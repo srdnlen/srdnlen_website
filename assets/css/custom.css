@@ -55,6 +55,33 @@ html.dark {
   }
 }
 
+/* Background blur */
+@supports (animation-timeline: scroll()) { 
+  @media (prefers-reduced-motion: no-preference) {
+    #background-image {
+      animation-name: blurScrollAnimation;
+      animation-duration: 1ms;
+      animation-timeline: scroll(y root);
+    }
+
+    #background-darken {
+      animation-name: darkenScrollAnimation;
+      animation-duration: 1ms;
+      animation-timeline: scroll(y root);
+    }
+  }
+
+  @keyframes blurScrollAnimation {
+    from, 10% { filter: blur(0px); }
+    40%, to { filter: blur(12px); }
+  }
+
+  @keyframes darkenScrollAnimation {
+    from { opacity: 0; }
+    35%, to { opacity: 1; }
+  }
+}
+
 /* Hide search button when javascript is disabled */
 @media (scripting: none) {
   #search-button {
