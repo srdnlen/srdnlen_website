@@ -1,5 +1,6 @@
 +++
-title = "Homepage"
+title = "Srdnlen - Sardinia Len APS"
+summary = "Srdnlen is the academic CTF team of the University of Cagliari"
 +++
 
 ## Who are we?
