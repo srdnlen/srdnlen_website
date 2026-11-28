@@ -44,6 +44,17 @@ If you would like to submit a new writeup, you can follow these steps:
 > [!IMPORTANT]
 > If you need to use images for a post, please add them to the same directory where your index.md is stored. You can set a thumbnail for your post by simply uploading an image named featured.{png,jpg}.
 
+## Editing the theme
+
+If you edit the theme and use new Tailwind classes, you'll need to update the theme css.
+You can do it by running:
+```
+cd themes/blowfish/
+npm install
+cd ../..
+npm run build-css
+```
+
 ### Credits
 
 This website was built using Hugo with the [Blowfish](https://github.com/nunocoracao/blowfish) theme.

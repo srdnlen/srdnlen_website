@@ -1,0 +1,7 @@
+{{ if or .Params.autoSwitchAppearance .Params.footer.showAppearanceSwitcher}}
+    {{/* Signal both light and dark theme support */}}
+    <meta name="color-scheme" content="light dark">
+{{ else }}
+    {{/* Signal the forced theme */}}
+    <meta name="color-scheme" content="{{ .Params.defaultAppearance }}">
+{{ end }}

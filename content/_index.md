@@ -1,5 +1,6 @@
 +++
-title = "Homepage"
+title = "Srdnlen - Sardinia Len APS"
+summary = "Srdnlen is the academic CTF team of the University of Cagliari"
 +++
 
 ## Who are we?
@@ -32,5 +33,3 @@ Our team is constantly competing in CTFs and cybersecurity-related events, as we
 {{< /timelineItem >}}
 
 {{< /timeline >}}
-
-{{< list limit=2 title="Some of our latest works" >}}
